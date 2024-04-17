@@ -1,0 +1,14 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:158:9:pcm1774_DeInit	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:167:10:pcm1774_ReadID	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:197:9:pcm1774_Pause	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:288:9:pcm1774_SetOutputMode	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:298:9:pcm1774_SetFrequency	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:307:9:pcm1774_Reset	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:328:9:PCM1774_ReadReg	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:343:9:PCM1774_WriteReg	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:117:9:pcm1774_Init	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:178:9:pcm1774_Play	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:206:9:pcm1774_Resume	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:229:9:pcm1774_Stop	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:252:9:pcm1774_SetVolume	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/Components/pcm1774/PCM1774_reg.c:266:9:pcm1774_SetMute	1

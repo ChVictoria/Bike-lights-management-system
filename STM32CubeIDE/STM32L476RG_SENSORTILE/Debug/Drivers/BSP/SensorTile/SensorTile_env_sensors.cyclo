@@ -1,0 +1,13 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:673:16:BSP_LPS22HB_WriteReg	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:653:16:BSP_LPS22HB_DeInit	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:625:16:BSP_LPS22HB_Init	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:705:16:BSP_LPS22HB_ReadReg	11
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:80:9:BSP_ENV_SENSOR_Init	31
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:168:9:BSP_ENV_SENSOR_DeInit	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:194:9:BSP_ENV_SENSOR_GetCapabilities	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:220:9:BSP_ENV_SENSOR_ReadID	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:249:9:BSP_ENV_SENSOR_Enable	3
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:288:9:BSP_ENV_SENSOR_Disable	3
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:328:9:BSP_ENV_SENSOR_GetOutputDataRate	3
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:368:9:BSP_ENV_SENSOR_SetOutputDataRate	3
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_env_sensors.c:408:9:BSP_ENV_SENSOR_GetValue	3

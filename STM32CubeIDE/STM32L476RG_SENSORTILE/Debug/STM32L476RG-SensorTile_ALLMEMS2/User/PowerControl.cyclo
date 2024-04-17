@@ -1,0 +1,10 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:68:14:GetMinPowerMode	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:73:5:SetMinPowerMode	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:79:5:PowerCtrlLock	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:83:5:PowerCtrlUnLock	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:88:5:PowerCtrlGetState	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:93:6:vApplicationIdleHook	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:98:5:initPowerController	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:133:10:timeInSeconds	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:146:6:wakeIn	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/PowerControl.c:164:6:vPortSuppressTicksAndSleep	1

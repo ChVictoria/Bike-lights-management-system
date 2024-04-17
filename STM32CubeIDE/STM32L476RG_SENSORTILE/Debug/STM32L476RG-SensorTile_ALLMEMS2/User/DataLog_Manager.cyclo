@@ -1,0 +1,10 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:493:33:Gyro_Sensor_Handler_Light	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:518:33:Magneto_Sensor_Handler_Light	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:111:6:AudioProcess_SD_Recording	6
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:143:6:openFileAudio	4
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:168:6:closeFileAudio	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:267:6:openFile	4
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:291:6:closeFile	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:179:6:SD_CardLoggingMemsData	15
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:302:6:SD_CardLoggingMemsStart	7
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/DataLog_Manager.c:389:6:SD_CardLoggingMemsStop	4

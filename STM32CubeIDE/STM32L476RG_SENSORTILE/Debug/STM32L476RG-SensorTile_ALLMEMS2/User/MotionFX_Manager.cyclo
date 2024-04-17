@@ -1,0 +1,13 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:79:6:MotionFX_manager_init	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:133:6:MotionFX_manager_run	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:161:6:MotionFX_manager_start_6X	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:170:6:MotionFX_manager_stop_6X	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:179:6:MotionFX_manager_start_9X	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:188:6:MotionFX_manager_stop_9X	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:198:15:MotionFX_manager_getDataOUT	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:208:14:MotionFX_manager_getDataIN	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:218:6:MotionFX_manager_MagCal_run	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:230:6:MotionFX_manager_MagCal_start	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:241:6:MotionFX_manager_MagCal_stop	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:253:6:MotionFX_LoadMagCalFromNVM	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/MotionFX_Manager.c:266:6:MotionFX_SaveMagCalInNVM	1

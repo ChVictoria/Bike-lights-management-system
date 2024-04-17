@@ -1,0 +1,7 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:66:9:HCI_TL_SPI_Init	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:109:9:HCI_TL_SPI_DeInit	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:123:9:HCI_TL_SPI_Reset	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:139:9:HCI_TL_SPI_Receive	4
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:198:9:HCI_TL_SPI_Send	5
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:268:6:hci_tl_lowlevel_init	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/hci_tl_interface.c:309:6:hci_tl_lowlevel_isr	3

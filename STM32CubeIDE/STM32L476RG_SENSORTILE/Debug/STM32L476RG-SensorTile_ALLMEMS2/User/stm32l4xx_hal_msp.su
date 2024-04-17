@@ -1,0 +1,6 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:63:6:HAL_PCD_MspInit	48	static
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:93:6:HAL_PCD_MspDeInit	0	static
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:111:6:HAL_RTC_MspInit	152	static
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:197:6:HAL_RTC_MspDeInit	0	static
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:210:6:HAL_CRC_MspInit	8	static
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Projects/STM32L476RG-SensorTile/Applications/ALLMEMS2/Src/stm32l4xx_hal_msp.c:223:6:HAL_CRC_MspDeInit	0	static

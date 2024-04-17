@@ -1,0 +1,8 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:627:16:SD_SendCmd	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:151:9:BSP_SD_Init	12
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:185:9:BSP_SD_GetCardInfo	8
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:210:9:BSP_SD_ReadBlocks	8
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:291:9:BSP_SD_WriteBlocks	11
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:374:6:HAL_SPI_TxCpltCallback	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:700:9:BSP_SD_GetCardState	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Drivers/BSP/SensorTile/SensorTile_sd.c:778:9:BSP_SD_Erase	4

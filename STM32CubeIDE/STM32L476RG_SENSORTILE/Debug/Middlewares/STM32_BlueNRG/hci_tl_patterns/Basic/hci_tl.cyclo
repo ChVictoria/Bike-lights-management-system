@@ -1,0 +1,6 @@
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:125:13:move_list.constprop	2
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:154:6:hci_init	5
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:181:6:hci_register_io_bus	1
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:191:5:hci_send_req	20
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:329:6:hci_user_evt_proc	3
+C:/Users/power/OneDrive/Dokumente/6 sem/Embedded/STM32CubeFunctionPack_ALLMEMS2_V2.1.0/Middlewares/ST/BlueNRG-MS/hci/hci_tl_patterns/Basic/hci_tl.c:345:9:hci_notify_asynch_evt	6
