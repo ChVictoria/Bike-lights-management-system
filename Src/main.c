@@ -395,9 +395,9 @@ osTimerId timAudioLevId,timAudioLocId,timCarryId,timGestureId,timActivityId;
 
 /* CMSIS-OS  definitions                                                        */
 /* threads */
-osThreadDef(THREAD_1, ProcessThread, osPriorityNormal     , 0, configMINIMAL_STACK_SIZE*8);
-osThreadDef(THREAD_2, HostThread   , osPriorityAboveNormal, 0, configMINIMAL_STACK_SIZE*5);
-osThreadDef(THREAD_3, LightManagementThread   , osPriorityHigh, 0, configMINIMAL_STACK_SIZE*4);
+osThreadDef(THREAD_1, ProcessThread, osPriorityAboveNormal     , 0, configMINIMAL_STACK_SIZE*8);
+osThreadDef(THREAD_2, HostThread   , osPriorityNormal, 0, configMINIMAL_STACK_SIZE*5);
+osThreadDef(THREAD_3, LightManagementThread   , osPriorityHigh, 0, configMINIMAL_STACK_SIZE*3);
 
 
 /* Semaphores */
@@ -457,6 +457,7 @@ int main(void)
   osThreadCreate(osThread(THREAD_2), NULL);
   osThreadCreate(osThread(THREAD_3), NULL);
 
+
   /* Create the semaphores                                                    */
   semRun = osSemaphoreCreate(osSemaphore(SEM_Sm1), 1);
 
@@ -488,14 +489,15 @@ static void LightManagementThread(void const *argument)
 		/*todo Handle light management buttons' interrupts */
 		/* Initialize MotionFX library */
 
-		osDelay(30);//MotionFX are computed every 30 millisec in ProcThread
+		osDelay(60);//MotionFX are computed every 30 millisec in ProcThread
 		/* Handle Light Signals*/
 		if (motionFX_dataout_mutex != NULL){
 			if(osMutexWait(motionFX_dataout_mutex, osWaitForever) == osOK){
-				MFX_output_t *MotionFX_Engine_Out = MotionFX_manager_getDataOUT();
+				Manage_light_signals(MotionFX_manager_getDataOUT());
 				osMutexRelease(motionFX_dataout_mutex);
-				Manage_light_signals(MotionFX_Engine_Out);
 			}
+		} else {
+			Send_msg_BT_terminal("mutex is null");
 		}
 	}
 }
@@ -535,6 +537,8 @@ static void ProcessThread(void const *argument)
 						ComputeQuaternions();
 						osMutexRelease(motionFX_dataout_mutex);
 					}
+				}else {
+					Send_msg_BT_terminal("mutex is null");
 				}
 
 			   }
