@@ -134,13 +134,9 @@ void Generate_light_signal(light_signal signal){
 		case RIGHT_OFF:
 			break;
 		case EMERGENCY_ON:
-			//BSP_LED_On(LED1);
 			LedBlinkPeriodicStart();
-			//osDelay(1000);
-			//BSP_LED_Off(LED1);
 			break;
 		case EMERGENCY_OFF:
-			//BSP_LED_Off(LED1);
 			LedBlinkPeriodicStop();
 			break;
 

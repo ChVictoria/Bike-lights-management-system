@@ -1,8 +1,8 @@
 ../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:58:14:Check_acceleration	2
-../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:204:6:EmergTimerCallback	1
+../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:200:6:EmergTimerCallback	1
 ../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:81:14:Check_emergency	3
-../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:151:6:Send_signal_to_terminal	10
-../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:208:6:LedBlinkPeriodicStart	3
-../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:225:6:LedBlinkPeriodicStop	2
+../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:147:6:Send_signal_to_terminal	10
+../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:204:6:LedBlinkPeriodicStart	3
+../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:221:6:LedBlinkPeriodicStop	2
 ../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:94:6:Generate_light_signal	10
-../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:187:6:Manage_light_signals	4
+../STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.c:183:6:Manage_light_signals	4

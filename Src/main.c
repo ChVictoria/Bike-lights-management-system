@@ -485,11 +485,17 @@ int main(void)
 /*******Code for Light management integration ********/
 static void LightManagementThread(void const *argument)
 {
+	//startProc(QUAT, QUAT_UPDATE_MUL_10MS*3);
+	enableMotionSensors ();
+	if (!timQuatId) {
+	  timQuatId = osTimerCreate (osTimer(TimerQuatHandle),osTimerPeriodic, NULL);
+	  osTimerStart (timQuatId, QUAT_UPDATE_MUL_10MS*3);
+	}
+
 	while (1) {
 		/*todo Handle light management buttons' interrupts */
-		/* Initialize MotionFX library */
 
-		osDelay(60);//MotionFX are computed every 30 millisec in ProcThread
+		osDelay(QUAT_UPDATE_MUL_10MS*10);//MotionFX are computed every 30 millisec in ProcThread
 		/* Handle Light Signals*/
 		if (motionFX_dataout_mutex != NULL){
 			if(osMutexWait(motionFX_dataout_mutex, osWaitForever) == osOK){
@@ -497,7 +503,7 @@ static void LightManagementThread(void const *argument)
 				osMutexRelease(motionFX_dataout_mutex);
 			}
 		} else {
-			Send_msg_BT_terminal("mutex is null");
+			Send_msg_BT_terminal("can't alloc memory for motionFX_dataout_mutex");
 		}
 	}
 }
@@ -510,17 +516,22 @@ void Send_msg_BT_terminal(char message[]){
 }
 
 /******************************************************************/
+static int Libraries_initialized = 0;
 
 static void ProcessThread(void const *argument) 
 {
   msgData_t msg;
-
   while (1){
+#ifdef ALLMEMS2_ENABLE_SD_CARD_LOGGING
+			  RTC_GetCurrentDateTime();
+#endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
+
 	  if (semRun != NULL){
 		  if(osSemaphoreWait(semRun, osWaitForever) == osOK){
-
-			  InitLibraries();
-
+			  if(!Libraries_initialized){
+				  Libraries_initialized = 1;
+				  InitLibraries();
+			  }
 			/* Handle Interrupt from MEMS */
 			  if(MEMSInterrupt) {
 				MEMSCallback();
@@ -531,21 +542,15 @@ static void ProcessThread(void const *argument)
 			   }
 			   /* Code for MotionFX integration - Start Section */
 			   if(Quaternion) {
-				 if (motionFX_dataout_mutex != NULL){
-					if(osMutexWait(motionFX_dataout_mutex, osWaitForever) == osOK){
-						Quaternion=0;
-						ComputeQuaternions();
-						osMutexRelease(motionFX_dataout_mutex);
+				   if (motionFX_dataout_mutex != NULL){
+						if(osMutexWait(motionFX_dataout_mutex, osWaitForever) == osOK){
+							Quaternion=0;
+							ComputeQuaternions();
+							osMutexRelease(motionFX_dataout_mutex);
+						}
 					}
-				}else {
-					Send_msg_BT_terminal("mutex is null");
 				}
-
-			   }
 			  /* Code for MotionFX integration - End Section */
-#ifdef ALLMEMS2_ENABLE_SD_CARD_LOGGING
-			  RTC_GetCurrentDateTime();
-#endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
 
 			  if(set_connectable){
 			  if(NecessityToSaveMetaDataManager) {
@@ -558,7 +563,6 @@ static void ProcessThread(void const *argument)
 			  SendMsgToHost(&msg);
 			  set_connectable =0;
 			}
-
 
 			/* Handle user button */
 			if(ButtonPressed) {
@@ -678,7 +682,7 @@ static void HostThread(void const *argument)
           if( (!IsSdMemsRecording) && (!IsSdAudioRecording) )
 #endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
           {
-            LedBlinkStart();
+            //LedBlinkStart();
           }
           
 #ifdef ENABLE_SHUT_DOWN_MODE
@@ -692,7 +696,7 @@ static void HostThread(void const *argument)
           break;
 		  
         case SET_NOT_CONNECTABLE:
-          LedBlinkStop();
+          //LedBlinkStop();
           hciProcessEnable = 0 ;
           setNotConnectable();
           hostConnection = NOT_CONNECTED;
@@ -1456,8 +1460,7 @@ static void SendMotionData(void)
   MOTION_SENSOR_Axes_t GYR_Value;
   MOTION_SENSOR_Axes_t MAG_Value;
   msgData_t msg;
-  //TODO 1
-  //ComputeQuaternions();
+
   MFX_output_t *MotionFX_Engine_Out = MotionFX_manager_getDataOUT();
   /* Read the Acc values */
   //MOTION_SENSOR_GetAxes(ACCELERO_INSTANCE,MOTION_ACCELERO,&ACC_Value);
