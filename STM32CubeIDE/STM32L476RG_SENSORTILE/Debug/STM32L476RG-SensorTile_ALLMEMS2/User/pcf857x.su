@@ -1,0 +1,15 @@
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:28:9:pcf857x_Read8	16	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:43:10:pcf857x_Read16	16	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:58:6:pcf857x_Read	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:74:17:pcf857x_Write8	16	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:93:17:pcf857x_Write16	16	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:8:17:pcf857x_Init	16	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:112:17:pcf857x_Write	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:140:17:pcf857x_Toggle	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:164:17:pcf857x_ToggleAll	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:188:17:pcf857x_ShiftRight	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:229:17:pcf857x_ShiftLeft	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:270:17:pcf857x_RotateRight	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:300:17:pcf857x_RotateLeft	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:322:17:pcf857x_ResetInterruptPin	8	static
+../STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.c:336:17:pcf857x_GetLastError	0	static

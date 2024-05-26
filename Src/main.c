@@ -155,7 +155,7 @@
 #include "DataLog_Manager.h"
 #include "datalog_application.h"
 #endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */ 
-
+#include "pcf857x.h"
 #include "Light_Manager.h"
 /* Private typedef -----------------------------------------------------------*/
 
@@ -218,6 +218,7 @@ extern uint16_t sdcard_file_counter;
 
 #endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
 
+extern initial_pcf857x_pins_value;
 
 /* Exported Variables --------------------------------------------------------*/
 osSemaphoreId semRun;
@@ -305,6 +306,8 @@ static volatile uint32_t UpdateMotionGR  =0;
 unsigned char isCal = 0;
 static uint32_t mag_time_stamp = 0;
 
+
+
 void SystemClock_Config(void);
 
 #ifdef ENABLE_SHUT_DOWN_MODE 
@@ -356,6 +359,7 @@ static void ProcessThread(void const *argument);
 static void HostThread   (void const *argument);
 static void LightManagementThread(void const *argument);
 
+
 static void SendBatteryInfoData(void);
 
 
@@ -396,8 +400,9 @@ osTimerId timAudioLevId,timAudioLocId,timCarryId,timGestureId,timActivityId;
 /* CMSIS-OS  definitions                                                        */
 /* threads */
 osThreadDef(THREAD_1, ProcessThread, osPriorityAboveNormal     , 0, configMINIMAL_STACK_SIZE*8);
-osThreadDef(THREAD_2, HostThread   , osPriorityNormal, 0, configMINIMAL_STACK_SIZE*5);
-osThreadDef(THREAD_3, LightManagementThread   , osPriorityHigh, 0, configMINIMAL_STACK_SIZE*3);
+osThreadDef(THREAD_2, HostThread   , osPriorityNormal, 0, configMINIMAL_STACK_SIZE*3);
+osThreadDef(THREAD_3, LightManagementThread   , osPriorityHigh, 0, configMINIMAL_STACK_SIZE*5);
+//osThreadDef(THREAD_4, LightButtonManagementThread   , osPriorityHigh, 0, configMINIMAL_STACK_SIZE*2);
 
 
 /* Semaphores */
@@ -486,20 +491,19 @@ int main(void)
 static void LightManagementThread(void const *argument)
 {
 	//startProc(QUAT, QUAT_UPDATE_MUL_10MS*3);
-	enableMotionSensors ();
-	if (!timQuatId) {
-	  timQuatId = osTimerCreate (osTimer(TimerQuatHandle),osTimerPeriodic, NULL);
-	  osTimerStart (timQuatId, QUAT_UPDATE_MUL_10MS*3);
-	}
+	//enableMotionSensors ();
+//	if (!timQuatId) {
+//	  timQuatId = osTimerCreate (osTimer(TimerQuatHandle),osTimerPeriodic, NULL);
+//	  osTimerStart (timQuatId, QUAT_UPDATE_MUL_10MS*3);
+//	}
 
 	while (1) {
-		/*todo Handle light management buttons' interrupts */
-
-		osDelay(QUAT_UPDATE_MUL_10MS*10);//MotionFX are computed every 30 millisec in ProcThread
+		osDelay(25); //MotionFX are computed every 30 millisec in ProcThread
+		Manage_button_light_signals();
 		/* Handle Light Signals*/
 		if (motionFX_dataout_mutex != NULL){
 			if(osMutexWait(motionFX_dataout_mutex, osWaitForever) == osOK){
-				Manage_light_signals(MotionFX_manager_getDataOUT());
+				Manage_motion_light_signals(MotionFX_manager_getDataOUT());
 				osMutexRelease(motionFX_dataout_mutex);
 			}
 		} else {
@@ -507,6 +511,7 @@ static void LightManagementThread(void const *argument)
 		}
 	}
 }
+
 
 void Send_msg_BT_terminal(char message[]){
 	 if(W2ST_CHECK_CONNECTION(W2ST_CONNECT_STD_TERM)) {
@@ -682,7 +687,7 @@ static void HostThread(void const *argument)
           if( (!IsSdMemsRecording) && (!IsSdAudioRecording) )
 #endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
           {
-            //LedBlinkStart();
+            LedBlinkStart();
           }
           
 #ifdef ENABLE_SHUT_DOWN_MODE
@@ -696,7 +701,7 @@ static void HostThread(void const *argument)
           break;
 		  
         case SET_NOT_CONNECTABLE:
-          //LedBlinkStop();
+          LedBlinkStop();
           hciProcessEnable = 0 ;
           setNotConnectable();
           hostConnection = NOT_CONNECTED;
@@ -824,6 +829,11 @@ static int HardwareInit(void)
 
   InitTargetPlatform();
   
+  PCF857x_TypeDef status = pcf857x_Init(initial_pcf857x_pins_value);
+  if (status != PCF857x_OK){
+	ALLMEMS2_PRINTF("ERROR: Can't connect to PCF857");
+  }
+
 #ifdef ALLMEMS2_ENABLE_SD_CARD_LOGGING
   
   #ifdef ENABLE_SHUT_DOWN_MODE 
@@ -1461,20 +1471,14 @@ static void SendMotionData(void)
   MOTION_SENSOR_Axes_t MAG_Value;
   msgData_t msg;
 
-  MFX_output_t *MotionFX_Engine_Out = MotionFX_manager_getDataOUT();
   /* Read the Acc values */
-  //MOTION_SENSOR_GetAxes(ACCELERO_INSTANCE,MOTION_ACCELERO,&ACC_Value);
-  ACC_Value.x = (int32_t)(MotionFX_Engine_Out->linear_acceleration_9X[0]*1000);
-  ACC_Value.y = (int32_t)(MotionFX_Engine_Out->linear_acceleration_9X[1]*1000);
-  ACC_Value.z = (int32_t)(MotionFX_Engine_Out->linear_acceleration_9X[2]*1000);
+  MOTION_SENSOR_GetAxes(ACCELERO_INSTANCE,MOTION_ACCELERO,&ACC_Value);
   /* Read the Magneto values */
   MOTION_SENSOR_GetAxes(MAGNETO_INSTANCE,MOTION_MAGNETO, &MAG_Value);
 
   /* Read the Gyro values */
-  //MOTION_SENSOR_GetAxes(GYRO_INSTANCE,MOTION_GYRO, &GYR_Value);
-  GYR_Value.x = (int32_t)(MotionFX_Engine_Out->rotation_9X[0]*1000);
-  GYR_Value.y = (int32_t)(MotionFX_Engine_Out->rotation_9X[1]*1000);
-  GYR_Value.z = (int32_t)(MotionFX_Engine_Out->rotation_9X[2]*1000);
+  MOTION_SENSOR_GetAxes(GYRO_INSTANCE,MOTION_GYRO, &GYR_Value);
+
 
   msg.type    = MOTION;
   msg.motion.acc  = ACC_Value ;

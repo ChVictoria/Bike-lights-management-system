@@ -3,6 +3,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "timers.h"
+#include "pcf857x.h"
 /*
  * first direction in ax's name = positive direction
  */
@@ -13,7 +14,6 @@
 #define FOR_BACK_AX y
 #define ROLL_AX z
 
-
 #define BALANCE_THRESH 50
 #define ACCELR_THRESH 0.5
 #define TURN_THRESH 0.1
@@ -21,7 +21,12 @@
 #define MAX_TERMINAL_MESSAGE_LEN 30
 
 #define LED_BLINK_PERIOD 1000 //in milliseconds
-osTimerId emerg_timer;
+
+
+uint16_t initial_pcf857x_pins_value = 0x00FF;
+
+#define MOTION_CHECKERS_NUMBER 2
+#define BUTTON_CHECKERS_NUMBER 5
 
 typedef enum {
 	DARK,
@@ -31,7 +36,7 @@ typedef enum {
 illumination cur_illumination = LIGHT;
 
 typedef enum {
-	NO_SIGNAL,
+	NO_SIGNAL = 0,
 	STOP,
 	BOOST,
 	LEFT_ON,
@@ -40,20 +45,64 @@ typedef enum {
 	RIGHT_OFF,
 	EMERGENCY_ON,
 	EMERGENCY_OFF,
-	EVENLY
+	HEAD_LIGHT_ON,
+	HEAD_LIGHT_OFF,
+	DAY_LIGHT_ON,
+	DAY_LIGHT_OFF
 } light_signal;
 
-light_signal cur_signal = NO_SIGNAL;
+typedef enum {
+	HEAD_LIGHT_PIN = 15,
+	DAY_LIGHT_PIN = 13,
+	EMERGENCY_STOP_PIN = 14,
+	TURN_LEFT_PIN = 12,
+	TURN_RIGHT_PIN = 11,
+	HEAD_LIGHT_BUTTON_PIN = 3,
+	DAY_LIGHT_BUTTON_PIN = 4,
+	EMERG_LEFT_BUTTON_PIN = 1,
+	EMERG_RIGHT_BUTTON_PIN = 0,
+	RIGHT_LEFT_BUTTON_PIN = 2,
+} port_ext_pin;
 
+
+
+typedef struct  {
+	void (*callback)(void);
+	TimerHandle_t timer;
+}timer_callback_arg;
+void StopOffCallback(void);
+void DaylightBlinkOffCallback(void);
+void DaylightOffCallback(void);
+void StopTimerCallback(void const *arg);
+timer_callback_arg backlight_delay_arg = {&StopOffCallback, NULL};
+TimerHandle_t backlight_periodic_timer = NULL;
+timer_callback_arg daylight_delay_arg = {NULL, NULL};
+
+/* Motion signal checkers */
 light_signal Check_acceleration(MFX_output_t *fused_motion_data);
 //light_signal Check_turn(MFX_output_t *fused_motion_data);
-light_signal Check_emergency(MFX_output_t *fused_motion_data);
+light_signal Check_emergency_motion(MFX_output_t *fused_motion_data);
 
-#define CHECK_FUNCS_NUMBER 2
+
 //the closer checker to the beginning of the array the bigger it's priority when multiple signals come
-light_signal (* checkers_list[CHECK_FUNCS_NUMBER])(MFX_output_t *fused_motion_data) = {&Check_emergency, &Check_acceleration};
+light_signal (* motion_checkers[MOTION_CHECKERS_NUMBER])(MFX_output_t *fused_motion_data) = {&Check_emergency_motion, &Check_acceleration};
+light_signal cur_motion_signals[BUTTON_CHECKERS_NUMBER] = {0}; //all are NO_SIGNAL
 
+/* Button signal checkers */
+light_signal Check_emergency_button(void);
+light_signal Check_head_light_button(void);
+light_signal Check_day_light_button(void);
+light_signal Check_turn_left_button(void);
+light_signal Check_turn_right_button(void);
 
+light_signal (* button_checkers[BUTTON_CHECKERS_NUMBER])(void) = {&Check_emergency_button, &Check_head_light_button, &Check_day_light_button,
+                                                         &Check_turn_left_button, &Check_turn_right_button};
+light_signal cur_button_signals[BUTTON_CHECKERS_NUMBER] = {0}; //all are NO_SIGNAL
+
+/* Private functions prototypes */
+void SignalDelay(int period_ms, timer_callback_arg *arg);
+void PeriodicTimerStart(int period_ms, void (*callback)(TimerHandle_t), osTimerId *timer);
+void PeriodicTimerStop(osTimerId *timer);
 
 light_signal Check_acceleration(MFX_output_t *fused_motion_data){
 	if (fused_motion_data->linear_acceleration_9X[FOR_BACK_AX] < -ACCELR_THRESH){
@@ -61,7 +110,7 @@ light_signal Check_acceleration(MFX_output_t *fused_motion_data){
 	} else if(fused_motion_data->linear_acceleration_9X[FOR_BACK_AX] > ACCELR_THRESH){
 		return BOOST;
 	} else {
-		return EVENLY;
+		return NO_SIGNAL;
 	}
 }
 
@@ -78,66 +127,154 @@ light_signal Check_acceleration(MFX_output_t *fused_motion_data){
 this function can be used, but has no sense in current context
 */
 
-light_signal Check_emergency(MFX_output_t *fused_motion_data){
+light_signal Check_emergency_motion(MFX_output_t *fused_motion_data){
 	if ((fused_motion_data->rotation_9X[ROLL_AX] < -BALANCE_THRESH) ||
 		(fused_motion_data->rotation_9X[ROLL_AX] > BALANCE_THRESH)){
 			return EMERGENCY_ON;
 	} else {
-		if (cur_signal == EMERGENCY_ON){
-			return EMERGENCY_OFF;
-		} else {
-			return NO_SIGNAL;
-		}
+		return EMERGENCY_OFF;
 	}
+}
+
+light_signal Check_emergency_button(void){
+	light_signal signal= NO_SIGNAL;
+	pcf857x_Write(EMERG_RIGHT_BUTTON_PIN, 0);
+	if (!pcf857x_Read(EMERG_LEFT_BUTTON_PIN)){
+		signal = EMERGENCY_ON;
+	} else {
+		signal = EMERGENCY_OFF;
+	}
+	pcf857x_Write(EMERG_RIGHT_BUTTON_PIN, 1);
+	return signal;
+}
+
+light_signal Check_head_light_button(void){
+	if (!pcf857x_Read(HEAD_LIGHT_BUTTON_PIN)){
+		return HEAD_LIGHT_ON;
+	} else {
+		return HEAD_LIGHT_OFF;
+	}
+}
+
+light_signal Check_day_light_button(void){
+	 if (!pcf857x_Read(DAY_LIGHT_BUTTON_PIN)){
+		 if (cur_button_signals[2] == DAY_LIGHT_ON){
+			 return DAY_LIGHT_OFF;
+		 }
+		 return DAY_LIGHT_ON;
+	 }
+	 return NO_SIGNAL;
+}
+
+light_signal Check_turn_left_button(void){
+	light_signal signal= NO_SIGNAL;
+	pcf857x_Write(RIGHT_LEFT_BUTTON_PIN, 0);
+	if (!pcf857x_Read(EMERG_LEFT_BUTTON_PIN)){
+	  signal = LEFT_ON;
+	} else {
+	  signal = LEFT_OFF;
+	}
+
+	pcf857x_Write(RIGHT_LEFT_BUTTON_PIN, 1);
+	return signal;
+}
+
+light_signal Check_turn_right_button(void){
+	pcf857x_Write(RIGHT_LEFT_BUTTON_PIN, 0);
+	light_signal signal= NO_SIGNAL;
+
+	if (!pcf857x_Read(EMERG_RIGHT_BUTTON_PIN)){
+	  signal = RIGHT_ON;
+	} else {
+	  signal = RIGHT_OFF;
+	}
+	pcf857x_Write(RIGHT_LEFT_BUTTON_PIN, 1);
+	return signal;
+}
+
+void StopOffCallback(void){
+	pcf857x_Write(EMERGENCY_STOP_PIN, 0);
+
+}
+
+void DaylightBlinkCallback(TimerHandle_t xTimer){
+	pcf857x_Toggle(DAY_LIGHT_PIN);
+}
+
+void DaylightBlinkOffCallback(void){
+	PeriodicTimerStop(&backlight_periodic_timer);
+	pcf857x_Write(DAY_LIGHT_PIN, 1);
+}
+
+void DaylightOffCallback(void){
+	pcf857x_Write(DAY_LIGHT_PIN, 0);
+}
+
+void BacklightBlinkCallback(TimerHandle_t xTimer){
+	pcf857x_Toggle(EMERGENCY_STOP_PIN);
 }
 
 void Generate_light_signal(light_signal signal){
 	switch (signal){
 		case STOP:
-			switch (cur_illumination){
-				case LIGHT:
-					BSP_LED_On(LED1);
-					break;
-				case DARK:
-					//todo led blinking with higher then normal duty cycle
-					break;
+			if (!backlight_delay_arg.timer && !backlight_periodic_timer){
+				pcf857x_Write(EMERGENCY_STOP_PIN, 1);
+				SignalDelay(1000, &backlight_delay_arg);
 			}
-			osDelay(1000);
 			break;
 		case BOOST:
-			switch (cur_illumination){
-				case LIGHT:
-					BSP_LED_Off(LED1);
-					break;
-				case DARK:
-					//todo led blinking with lower then normal duty cycle
-					osDelay(1000);
-					break;
+			if (cur_button_signals[2] == DAY_LIGHT_ON && !backlight_delay_arg.timer){
+				PeriodicTimerStart(1, DaylightBlinkCallback, &backlight_periodic_timer);
+				SignalDelay(1000, &backlight_delay_arg);
 			}
 			break;
-		case EVENLY:
-			switch (cur_illumination){
-				case LIGHT:
-					BSP_LED_Off(LED1);
-					break;
-				case DARK:
-					//todo led blinking with normal duty cycle
-					break;
+		case HEAD_LIGHT_ON:
+			pcf857x_Write(HEAD_LIGHT_PIN, 1);
+			break;
+		case HEAD_LIGHT_OFF:
+			pcf857x_Write(HEAD_LIGHT_PIN, 0);
+			break;
+		case DAY_LIGHT_ON:
+			if (!daylight_delay_arg.timer){
+				pcf857x_Write(DAY_LIGHT_PIN, 1);
+				SignalDelay(300, &daylight_delay_arg);
+			}
+			break;
+		case DAY_LIGHT_OFF:
+			if (!daylight_delay_arg.timer){
+				pcf857x_Write(DAY_LIGHT_PIN, 0);
+				SignalDelay(300, &daylight_delay_arg);
 			}
 			break;
 		case LEFT_ON:
+			pcf857x_Write(TURN_LEFT_PIN, 1);
 			break;
 		case RIGHT_ON:
+			pcf857x_Write(TURN_RIGHT_PIN, 1);
 			break;
 		case LEFT_OFF:
+			pcf857x_Write(TURN_LEFT_PIN, 0);
 			break;
 		case RIGHT_OFF:
+			pcf857x_Write(TURN_RIGHT_PIN, 0);
 			break;
 		case EMERGENCY_ON:
-			LedBlinkPeriodicStart();
+			if (backlight_delay_arg.timer){
+				StopTimerCallback(backlight_delay_arg.timer);
+			}
+			if (backlight_periodic_timer){
+
+				PeriodicTimerStop(&backlight_periodic_timer);
+			}
+
+			PeriodicTimerStart(500, BacklightBlinkCallback, &backlight_periodic_timer);
+
 			break;
 		case EMERGENCY_OFF:
-			LedBlinkPeriodicStop();
+			PeriodicTimerStop(&backlight_periodic_timer);
+			pcf857x_Write(EMERGENCY_STOP_PIN, 0);
+			break;
+		default:
 			break;
 
 	}
@@ -146,7 +283,6 @@ void Generate_light_signal(light_signal signal){
 
 void Send_signal_to_terminal(light_signal signal){
 	char message[MAX_TERMINAL_MESSAGE_LEN+1] = {0};
-
 	switch(signal){
 		case STOP:
 			strncpy( message, "You're slowing down!\r\n", MAX_TERMINAL_MESSAGE_LEN);
@@ -154,8 +290,17 @@ void Send_signal_to_terminal(light_signal signal){
 		case BOOST:
 			strncpy( message, "You're speeding up!\r\n", MAX_TERMINAL_MESSAGE_LEN);
 			break;
-		case EVENLY:
-			strncpy( message, "Your velocity is even!\r\n", MAX_TERMINAL_MESSAGE_LEN);
+		case HEAD_LIGHT_ON:
+			strncpy( message, "Head light is ON!\r\n", MAX_TERMINAL_MESSAGE_LEN);
+			break;
+		case HEAD_LIGHT_OFF:
+			strncpy( message, "Head light is OFF!\r\n", MAX_TERMINAL_MESSAGE_LEN);
+			break;
+		case DAY_LIGHT_ON:
+			strncpy( message, "Day light is ON!\r\n", MAX_TERMINAL_MESSAGE_LEN);
+			break;
+		case DAY_LIGHT_OFF:
+			strncpy( message, "Day light is OFF!\r\n", MAX_TERMINAL_MESSAGE_LEN);
 			break;
 		case LEFT_ON:
 			strncpy( message, "Turn left is ON!\r\n", MAX_TERMINAL_MESSAGE_LEN);
@@ -175,60 +320,103 @@ void Send_signal_to_terminal(light_signal signal){
 		case EMERGENCY_OFF:
 			strncpy( message, "Emergency signal is OFF!\r\n", MAX_TERMINAL_MESSAGE_LEN);
 			break;
+		case NO_SIGNAL:
+			break;
 	}
 
 	Send_msg_BT_terminal(message);
 }
 
-void Manage_light_signals(MFX_output_t *fused_motion_data){
+void Manage_motion_light_signals(MFX_output_t *fused_motion_data){
 	light_signal signal;
-	for (int i=0; i<CHECK_FUNCS_NUMBER; i++){
-		signal = checkers_list[i](fused_motion_data);
-		if (signal != NO_SIGNAL){
-			if (cur_signal != signal){
-				Generate_light_signal(signal);
-				Send_signal_to_terminal(signal);
-			}
+	for (int i=0; i<MOTION_CHECKERS_NUMBER; i++){
+		signal = motion_checkers[i](fused_motion_data);
+
+		if (cur_motion_signals[i] != signal && signal != NO_SIGNAL){
+			cur_motion_signals[i] = signal;
+			Send_signal_to_terminal(signal);
+			Generate_light_signal(signal);
 			break;
 		}
 	}
 
-
-	cur_signal = signal;
 }
 
-void EmergTimerCallback(TimerHandle_t xTimer) {
-	BSP_LED_Toggle(LED1);
+void Manage_button_light_signals(void){
+	light_signal signal;
+	for (int i=0; i<BUTTON_CHECKERS_NUMBER; i++){
+		signal = button_checkers[i]();
+		if (cur_button_signals[i] != signal && signal!=NO_SIGNAL){
+			Generate_light_signal(signal);
+			Send_signal_to_terminal(signal);
+			cur_button_signals[i] = signal;
+		}
+	}
 }
 
-void LedBlinkPeriodicStart(void)
+
+void StopTimerCallback(void const *arg) {
+	timer_callback_arg *argument = (timer_callback_arg *)pvTimerGetTimerID((TimerHandle_t)arg);
+	if (argument->callback){
+		argument->callback();
+	}
+	if  (osTimerStop (argument->timer) != osOK){
+	  ALLMEMS2_PRINTF("could not stop timer\n\r");
+	}
+	if (osTimerDelete (argument->timer) != osOK)  {
+	  ALLMEMS2_PRINTF("could not delete timer\n\r");
+	}
+	argument->timer = NULL;
+}
+
+void SignalDelay(int period_ms, timer_callback_arg *arg)
 {
-  LedOnTargetPlatform();
-  if (!emerg_timer) {
-	  emerg_timer = xTimerCreate(
-	                        "Emergency signal timer",        // Name of timer
-	                        1,  							// Period of timer (in ticks)
-	                        pdTRUE,                        // Auto-reload
-	                        (void *)1,                    // Timer ID
-							EmergTimerCallback);         // Callback function
+	if (!arg->timer) {
+		arg->timer = xTimerCreate(
+							"delay timer",
+							1,
+							pdFALSE,
+							(void *)arg,
+							(TimerCallbackFunction_t)StopTimerCallback);
+
+	}
+
+	if (arg->timer){
+	  osTimerStart(arg->timer,  pdMS_TO_TICKS(period_ms));
+	}
+	else {
+		ALLMEMS2_PRINTF("could not create timer\n\r");
+	}
+}
+
+
+
+void PeriodicTimerStart(int period_ms, void (*callback)(TimerHandle_t), osTimerId *timer)
+{
+  if (!*timer) {
+	   *timer = xTimerCreate(
+	                        "",         // Name of timer
+	                        1,  		// Period of timer (in ticks)
+	                        pdTRUE,     // Auto-reload
+	                        (void *)1,  // Timer ID
+							callback);  // Callback function
 
   }
-  if (emerg_timer){
-	  osTimerStart(emerg_timer,  pdMS_TO_TICKS( 1000 ));
+  if (*timer){
+	  osTimerStart(*timer,  pdMS_TO_TICKS(period_ms));
   }
 }
 
-void LedBlinkPeriodicStop(void)
+void PeriodicTimerStop(osTimerId *timer)
 {
-  LedOffTargetPlatform();
-  if (emerg_timer) {
-        if  (osTimerStop (emerg_timer) != osOK){
-          ALLMEMS2_PRINTF("could not stop led emergency timer\n\r");
+  if (*timer) {
+        if  (osTimerStop (*timer) != osOK){
+          ALLMEMS2_PRINTF("could not stop timer\n\r");
         }
-        if (osTimerDelete (emerg_timer) != osOK)  {
-          ALLMEMS2_PRINTF("could not delete led emergency timer\n\r");
+        if (osTimerDelete (*timer) != osOK)  {
+          ALLMEMS2_PRINTF("could not delete timer\n\r");
         }
-    emerg_timer = NULL;
+    *timer = NULL;
   }
 }
 

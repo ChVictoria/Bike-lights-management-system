@@ -132,7 +132,7 @@ STM32L476RG-SensorTile_ALLMEMS2/User/main.o: \
  ../../../../../../../Drivers/BSP/SensorTile/SensorTile_env_sensors_ex.h \
  ../../../../../../../Drivers/BSP/SensorTile/SensorTile_env_sensors.h \
  ../../../Inc/DataLog_Manager.h ../../../Inc/datalog_application.h \
- ../../../Inc/Light_Manager.h
+ ../../../Inc/pcf857x.h ../../../Inc/Light_Manager.h
 ../../../Inc/TargetFeatures.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../../../Inc/stm32l4xx_hal_conf.h:
@@ -272,4 +272,5 @@ STM32L476RG-SensorTile_ALLMEMS2/User/main.o: \
 ../../../../../../../Drivers/BSP/SensorTile/SensorTile_env_sensors.h:
 ../../../Inc/DataLog_Manager.h:
 ../../../Inc/datalog_application.h:
+../../../Inc/pcf857x.h:
 ../../../Inc/Light_Manager.h:

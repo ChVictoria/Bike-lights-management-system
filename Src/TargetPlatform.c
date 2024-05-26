@@ -90,6 +90,7 @@ void InitTargetPlatform(void)
 #endif /* ALLMEMS2_ENABLE_SD_CARD_LOGGING */
   
   Sensor_IO_SPI_CS_Init_All();
+  BSP_I2C3_Init();
   
   #ifdef ALLMEMS2_ENABLE_PRINTF
   /* enable USB power on Pwrctrl CR2 register */

@@ -126,7 +126,8 @@ STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o: \
  ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+ ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ ../../../Inc/pcf857x.h
 ../../../../../../../Drivers/BSP/SensorTile/Sensortile.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../../../Inc/stm32l4xx_hal_conf.h:
@@ -259,3 +260,4 @@ STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o: \
 ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 ../../../../../../../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+../../../Inc/pcf857x.h:
