@@ -111,6 +111,7 @@ void MotionFX_manager_init(void)
   ipKnobs->output_type = MFX_ENGINE_OUTPUT_ENU;
   ipKnobs->LMode = 1;
   ipKnobs->modx  = 1;
+  ipKnobs->ATime = 0.5;
 
   MotionFX_setKnobs(ipKnobs);
   

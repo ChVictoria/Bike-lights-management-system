@@ -490,15 +490,14 @@ int main(void)
 /*******Code for Light management integration ********/
 static void LightManagementThread(void const *argument)
 {
-	//startProc(QUAT, QUAT_UPDATE_MUL_10MS*3);
-	//enableMotionSensors ();
-//	if (!timQuatId) {
-//	  timQuatId = osTimerCreate (osTimer(TimerQuatHandle),osTimerPeriodic, NULL);
-//	  osTimerStart (timQuatId, QUAT_UPDATE_MUL_10MS*3);
-//	}
+	enableMotionSensors ();
+	if (!timQuatId) {
+	  timQuatId = osTimerCreate (osTimer(TimerQuatHandle),osTimerPeriodic, NULL);
+	}
+	osTimerStart (timQuatId, QUAT_UPDATE_MUL_10MS*3);
 
 	while (1) {
-		osDelay(25); //MotionFX are computed every 30 millisec in ProcThread
+		osDelay(30); //MotionFX are computed every 30 millisec in ProcThread
 		Manage_button_light_signals();
 		/* Handle Light Signals*/
 		if (motionFX_dataout_mutex != NULL){
@@ -975,7 +974,7 @@ static void InitLibraries(void)
   if(TargetBoardFeatures.MotionFXIsInitalized==0)
   {
     MotionFX_manager_init();
-    MotionFX_manager_start_9X();
+    MotionFX_manager_start_6X();
     /* Enable magnetometer calibration */
     MagCalibTest();
   }
@@ -1005,7 +1004,7 @@ static void startProcessing  (void const *arg)
       SendBatteryInfo= 1;
   }
   else if (arg == timQuatId){
-    if ((W2ST_CHECK_CONNECTION(W2ST_CONNECT_QUAT)) | (W2ST_CHECK_CONNECTION(W2ST_CONNECT_EC)))
+    //if ((W2ST_CHECK_CONNECTION(W2ST_CONNECT_QUAT)) | (W2ST_CHECK_CONNECTION(W2ST_CONNECT_EC)))
       Quaternion=1;
   }
   else if (arg == timMotionId){
@@ -1459,6 +1458,7 @@ static void MEMSCallback(void)
     AccStepEvent_Msg(PedometerStepCount);
   }
 }
+extern float volatile acc_avg;
 /**
   * @brief  Send Motion Data Acc/Mag/Gyro to BLE
   * @param  None
@@ -1467,21 +1467,26 @@ static void MEMSCallback(void)
 static void SendMotionData(void)
 {
   MOTION_SENSOR_Axes_t ACC_Value;
+  MOTION_SENSOR_Axes_t ACC_L;
   MOTION_SENSOR_Axes_t GYR_Value;
   MOTION_SENSOR_Axes_t MAG_Value;
   msgData_t msg;
 
   /* Read the Acc values */
   MOTION_SENSOR_GetAxes(ACCELERO_INSTANCE,MOTION_ACCELERO,&ACC_Value);
+
   /* Read the Magneto values */
   MOTION_SENSOR_GetAxes(MAGNETO_INSTANCE,MOTION_MAGNETO, &MAG_Value);
 
   /* Read the Gyro values */
   MOTION_SENSOR_GetAxes(GYRO_INSTANCE,MOTION_GYRO, &GYR_Value);
-
-
+  //MotionFX_manager_run(ACC_Value,GYR_Value,MAG_Value);
+  //MFX_output_t *MotionFX_Engine_Out = MotionFX_manager_getDataOUT();
+	ACC_L.y = ACC_Value.x;
+	ACC_L.x = acc_avg*10000;
+	ACC_L.z = 0;
   msg.type    = MOTION;
-  msg.motion.acc  = ACC_Value ;
+  msg.motion.acc  = ACC_L ;
   msg.motion.gyr  = GYR_Value;
   msg.motion.mag  = MAG_Value;
   SendMsgToHost(&msg);
