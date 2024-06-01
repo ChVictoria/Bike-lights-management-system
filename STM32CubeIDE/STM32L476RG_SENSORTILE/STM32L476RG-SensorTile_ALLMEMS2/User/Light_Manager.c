@@ -15,7 +15,7 @@
 #define UP_DOWN_AX z
 #define ROLL_AX z
 
-#define BALANCE_THRESH 40
+#define BALANCE_THRESH 30
 #define ACC_STOP_THRESH 0.08
 #define ACC_BOOST_THRESH 0.05
 
@@ -218,7 +218,7 @@ light_signal Check_turn_right_button(void){
 }
 
 void StopOffCallback(void){
-	pcf857x_Write(HEAD_LIGHT_PIN, 0);
+	pcf857x_Write(EMERGENCY_STOP_PIN, 0);
 
 }
 

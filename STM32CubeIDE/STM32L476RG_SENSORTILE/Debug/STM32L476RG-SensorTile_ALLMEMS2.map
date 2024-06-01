@@ -18807,7 +18807,7 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000008004000                g_pfnVectors
                 0x0000000008004188                . = ALIGN (0x8)
 
-.text           0x0000000008004190    0x29ef8
+.text           0x0000000008004190    0x29ef0
                 0x0000000008004190                . = ALIGN (0x8)
  *(.text)
  .text          0x0000000008004190       0x40 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
@@ -20876,1065 +20876,1065 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000000080142a4       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/HWAdvanceFeatures.o
                 0x00000000080142a4                DisableHWMultipleEvents
  .text.Check_emergency_motion
-                0x00000000080142c4       0x40 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080142c4       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
                 0x00000000080142c4                Check_emergency_motion
  .text.StopOffCallback
-                0x0000000008014304        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x0000000008014304                StopOffCallback
+                0x00000000080142fc        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080142fc                StopOffCallback
  .text.Check_emergency_button
-                0x000000000801430c       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801430c                Check_emergency_button
+                0x0000000008014304       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014304                Check_emergency_button
  .text.Check_head_light_button
-                0x000000000801432c        0xe ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801432c                Check_head_light_button
+                0x0000000008014324        0xe ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014324                Check_head_light_button
  .text.Check_turn_left_button
-                0x000000000801433a       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801433a                Check_turn_left_button
+                0x0000000008014332       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014332                Check_turn_left_button
  .text.Check_turn_right_button
-                0x000000000801435a       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801435a                Check_turn_right_button
+                0x0000000008014352       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014352                Check_turn_right_button
  .text.DaylightBlinkCallback
-                0x000000000801437a        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801437a                DaylightBlinkCallback
+                0x0000000008014372        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014372                DaylightBlinkCallback
  .text.BacklightBlinkCallback
-                0x0000000008014380        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x0000000008014380                BacklightBlinkCallback
+                0x0000000008014378        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014378                BacklightBlinkCallback
  .text.StopTimerCallback
-                0x0000000008014386       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x0000000008014386                StopTimerCallback
- *fill*         0x00000000080143a6        0x2 
+                0x000000000801437e       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x000000000801437e                StopTimerCallback
+ *fill*         0x000000000801439e        0x2 
  .text.Check_day_light_button
-                0x00000000080143a8       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080143a8                Check_day_light_button
- .text.sum      0x00000000080143c8       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080143c8                sum
+                0x00000000080143a0       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080143a0                Check_day_light_button
+ .text.sum      0x00000000080143c0       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080143c0                sum
  .text.Check_acceleration
-                0x00000000080143e8       0x84 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080143e8                Check_acceleration
+                0x00000000080143e0       0x84 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080143e0                Check_acceleration
  .text.Send_signal_to_terminal
-                0x000000000801446c       0xb0 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801446c                Send_signal_to_terminal
+                0x0000000008014464       0xb0 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014464                Send_signal_to_terminal
  .text.SignalDelay
-                0x000000000801451c       0x40 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801451c                SignalDelay
+                0x0000000008014514       0x40 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014514                SignalDelay
  .text.PeriodicTimerStart
-                0x000000000801455c       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x000000000801455c                PeriodicTimerStart
+                0x0000000008014554       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014554                PeriodicTimerStart
  .text.PeriodicTimerStop
-                0x0000000008014598       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x0000000008014598                PeriodicTimerStop
+                0x0000000008014590       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x0000000008014590                PeriodicTimerStop
  .text.DaylightBlinkOffCallback
-                0x00000000080145b0       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080145b0                DaylightBlinkOffCallback
+                0x00000000080145a8       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080145a8                DaylightBlinkOffCallback
  .text.Generate_light_signal
-                0x00000000080145c8      0x110 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080145c8                Generate_light_signal
+                0x00000000080145c0      0x110 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080145c0                Generate_light_signal
  .text.Manage_motion_light_signals
-                0x00000000080146d8       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x00000000080146d8                Manage_motion_light_signals
+                0x00000000080146d0       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x00000000080146d0                Manage_motion_light_signals
  .text.Manage_button_light_signals
-                0x0000000008014714       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
-                0x0000000008014714                Manage_button_light_signals
+                0x000000000801470c       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x000000000801470c                Manage_button_light_signals
  .text.MotionAR_manager_run
-                0x000000000801474c       0x68 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionAR_Manager.o
-                0x000000000801474c                MotionAR_manager_run
+                0x0000000008014744       0x68 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionAR_Manager.o
+                0x0000000008014744                MotionAR_manager_run
  .text.MotionAR_manager_init
-                0x00000000080147b4       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionAR_Manager.o
-                0x00000000080147b4                MotionAR_manager_init
+                0x00000000080147ac       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionAR_Manager.o
+                0x00000000080147ac                MotionAR_manager_init
  .text.MotionCP_manager_run
-                0x00000000080147e8       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionCP_Manager.o
-                0x00000000080147e8                MotionCP_manager_run
+                0x00000000080147e0       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionCP_Manager.o
+                0x00000000080147e0                MotionCP_manager_run
  .text.MotionCP_manager_init
-                0x0000000008014848       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionCP_Manager.o
-                0x0000000008014848                MotionCP_manager_init
+                0x0000000008014840       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionCP_Manager.o
+                0x0000000008014840                MotionCP_manager_init
  .text.MotionFX_manager_init
-                0x000000000801487c       0x94 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x000000000801487c                MotionFX_manager_init
+                0x0000000008014874       0x94 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014874                MotionFX_manager_init
  .text.MotionFX_manager_run
-                0x0000000008014910      0x134 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014910                MotionFX_manager_run
+                0x0000000008014908      0x134 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014908                MotionFX_manager_run
  .text.MotionFX_manager_start_6X
-                0x0000000008014a44        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a44                MotionFX_manager_start_6X
- *fill*         0x0000000008014a4a        0x2 
+                0x0000000008014a3c        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a3c                MotionFX_manager_start_6X
+ *fill*         0x0000000008014a42        0x2 
  .text.MotionFX_manager_getDataOUT
-                0x0000000008014a4c        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a4c                MotionFX_manager_getDataOUT
+                0x0000000008014a44        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a44                MotionFX_manager_getDataOUT
  .text.MotionFX_manager_MagCal_run
-                0x0000000008014a54       0x12 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a54                MotionFX_manager_MagCal_run
+                0x0000000008014a4c       0x12 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a4c                MotionFX_manager_MagCal_run
  .text.MotionFX_manager_MagCal_start
-                0x0000000008014a66        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a66                MotionFX_manager_MagCal_start
+                0x0000000008014a5e        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a5e                MotionFX_manager_MagCal_start
  .text.MotionFX_manager_MagCal_stop
-                0x0000000008014a6c        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a6c                MotionFX_manager_MagCal_stop
+                0x0000000008014a64        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a64                MotionFX_manager_MagCal_stop
  .text.MotionFX_LoadMagCalFromNVM
-                0x0000000008014a72        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a72                MotionFX_LoadMagCalFromNVM
+                0x0000000008014a6a        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a6a                MotionFX_LoadMagCalFromNVM
  .text.MotionFX_SaveMagCalInNVM
-                0x0000000008014a78        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
-                0x0000000008014a78                MotionFX_SaveMagCalInNVM
- *fill*         0x0000000008014a7e        0x2 
+                0x0000000008014a70        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionFX_Manager.o
+                0x0000000008014a70                MotionFX_SaveMagCalInNVM
+ *fill*         0x0000000008014a76        0x2 
  .text.MotionGR_manager_run
-                0x0000000008014a80       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionGR_Manager.o
-                0x0000000008014a80                MotionGR_manager_run
+                0x0000000008014a78       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionGR_Manager.o
+                0x0000000008014a78                MotionGR_manager_run
  .text.MotionGR_manager_init
-                0x0000000008014ae0       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionGR_Manager.o
-                0x0000000008014ae0                MotionGR_manager_init
+                0x0000000008014ad8       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/MotionGR_Manager.o
+                0x0000000008014ad8                MotionGR_manager_init
  .text.CheckBootLoaderCompliance
-                0x0000000008014b14       0x48 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
-                0x0000000008014b14                CheckBootLoaderCompliance
+                0x0000000008014b0c       0x48 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
+                0x0000000008014b0c                CheckBootLoaderCompliance
  .text.UpdateFWBlueMS
-                0x0000000008014b5c      0x114 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
-                0x0000000008014b5c                UpdateFWBlueMS
+                0x0000000008014b54      0x114 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
+                0x0000000008014b54                UpdateFWBlueMS
  .text.StartUpdateFWBlueMS
-                0x0000000008014c70       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
-                0x0000000008014c70                StartUpdateFWBlueMS
+                0x0000000008014c68       0x60 ./STM32L476RG-SensorTile_ALLMEMS2/User/OTA.o
+                0x0000000008014c68                StartUpdateFWBlueMS
  .text.SetMinPowerMode
-                0x0000000008014cd0        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014cd0                SetMinPowerMode
+                0x0000000008014cc8        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014cc8                SetMinPowerMode
  .text.PowerCtrlLock
-                0x0000000008014cdc       0x10 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014cdc                PowerCtrlLock
+                0x0000000008014cd4       0x10 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014cd4                PowerCtrlLock
  .text.PowerCtrlUnLock
-                0x0000000008014cec       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014cec                PowerCtrlUnLock
+                0x0000000008014ce4       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014ce4                PowerCtrlUnLock
  .text.vApplicationIdleHook
-                0x0000000008014d00        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014d00                vApplicationIdleHook
+                0x0000000008014cf8        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014cf8                vApplicationIdleHook
  .text.initPowerController
-                0x0000000008014d04       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014d04                initPowerController
+                0x0000000008014cfc       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014cfc                initPowerController
  .text.vPortSuppressTicksAndSleep
-                0x0000000008014d60        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
-                0x0000000008014d60                vPortSuppressTicksAndSleep
+                0x0000000008014d58        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/PowerControl.o
+                0x0000000008014d58                vPortSuppressTicksAndSleep
  .text.InitTargetPlatform
-                0x0000000008014d6c       0xbc ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014d6c                InitTargetPlatform
+                0x0000000008014d64       0xbc ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014d64                InitTargetPlatform
  .text.enableMotionSensors
-                0x0000000008014e28       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014e28                enableMotionSensors
+                0x0000000008014e20       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014e20                enableMotionSensors
  .text.disableMotionSensors
-                0x0000000008014e46       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014e46                disableMotionSensors
+                0x0000000008014e3e       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014e3e                disableMotionSensors
  .text.enableEnvSensors
-                0x0000000008014e64       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014e64                enableEnvSensors
+                0x0000000008014e5c       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014e5c                enableEnvSensors
  .text.disableEnvSensors
-                0x0000000008014ea0       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014ea0                disableEnvSensors
+                0x0000000008014e98       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014e98                disableEnvSensors
  .text.InitMics
-                0x0000000008014edc       0x4c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014edc                InitMics
+                0x0000000008014ed4       0x4c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014ed4                InitMics
  .text.DeInitMics
-                0x0000000008014f28       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014f28                DeInitMics
+                0x0000000008014f20       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014f20                DeInitMics
  .text.LedOnTargetPlatform
-                0x0000000008014f58       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014f58                LedOnTargetPlatform
+                0x0000000008014f50       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014f50                LedOnTargetPlatform
  .text.LedOffTargetPlatform
-                0x0000000008014f6c       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014f6c                LedOffTargetPlatform
+                0x0000000008014f64       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014f64                LedOffTargetPlatform
  .text.LedToggleTargetPlatform
-                0x0000000008014f80       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014f80                LedToggleTargetPlatform
- .text.GetPage  0x0000000008014f98       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014f98                GetPage
- .text.GetBank  0x0000000008014fd0       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008014fd0                GetBank
+                0x0000000008014f78       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014f78                LedToggleTargetPlatform
+ .text.GetPage  0x0000000008014f90       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014f90                GetPage
+ .text.GetBank  0x0000000008014fc8       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008014fc8                GetBank
  .text.UserFunctionForErasingFlash
-                0x000000000801502c       0x44 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x000000000801502c                UserFunctionForErasingFlash
+                0x0000000008015024       0x44 ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008015024                UserFunctionForErasingFlash
  .text.UserFunctionForSavingFlash
-                0x0000000008015070       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
-                0x0000000008015070                UserFunctionForSavingFlash
+                0x0000000008015068       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/TargetPlatform.o
+                0x0000000008015068                UserFunctionForSavingFlash
  .text.floatToInt
-                0x00000000080150ac       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x00000000080150a4       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
  .text.DATALOG_SD_Init
-                0x0000000008015110       0x44 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x0000000008015110                DATALOG_SD_Init
+                0x0000000008015108       0x44 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015108                DATALOG_SD_Init
  .text.DATALOG_SD_Log_Enable
-                0x0000000008015154      0x4fc ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x0000000008015154                DATALOG_SD_Log_Enable
+                0x000000000801514c      0x4fc ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x000000000801514c                DATALOG_SD_Log_Enable
  .text.DATALOG_SD_LogAudio_Enable
-                0x0000000008015650      0x140 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x0000000008015650                DATALOG_SD_LogAudio_Enable
+                0x0000000008015648      0x140 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015648                DATALOG_SD_LogAudio_Enable
  .text.DATALOG_SD_DeInit
-                0x0000000008015790        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x0000000008015790                DATALOG_SD_DeInit
+                0x0000000008015788        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015788                DATALOG_SD_DeInit
  .text.DATALOG_SD_Log_Disable
-                0x000000000801579c       0x1c ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x000000000801579c                DATALOG_SD_Log_Disable
+                0x0000000008015794       0x1c ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015794                DATALOG_SD_Log_Disable
  .text.DATALOG_SD_LogAudio_Disable
-                0x00000000080157b8       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x00000000080157b8                DATALOG_SD_LogAudio_Disable
+                0x00000000080157b0       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x00000000080157b0                DATALOG_SD_LogAudio_Disable
  .text.writeAudio_on_sd
-                0x000000000801581c       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x000000000801581c                writeAudio_on_sd
+                0x0000000008015814       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015814                writeAudio_on_sd
  .text.saveData
-                0x0000000008015858      0x1c4 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
-                0x0000000008015858                saveData
+                0x0000000008015850      0x1c4 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x0000000008015850                saveData
  .text.HCI_TL_SPI_Init
-                0x0000000008015a1c       0xac ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015a1c                HCI_TL_SPI_Init
+                0x0000000008015a14       0xac ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015a14                HCI_TL_SPI_Init
  .text.HCI_TL_SPI_DeInit
-                0x0000000008015ac8       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015ac8                HCI_TL_SPI_DeInit
+                0x0000000008015ac0       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015ac0                HCI_TL_SPI_DeInit
  .text.HCI_TL_SPI_Reset
-                0x0000000008015af4       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015af4                HCI_TL_SPI_Reset
+                0x0000000008015aec       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015aec                HCI_TL_SPI_Reset
  .text.HCI_TL_SPI_Receive
-                0x0000000008015b20       0x84 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015b20                HCI_TL_SPI_Receive
+                0x0000000008015b18       0x84 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015b18                HCI_TL_SPI_Receive
  .text.HCI_TL_SPI_Send
-                0x0000000008015ba4       0x94 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015ba4                HCI_TL_SPI_Send
+                0x0000000008015b9c       0x94 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015b9c                HCI_TL_SPI_Send
  .text.hci_tl_lowlevel_init
-                0x0000000008015c38       0x50 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015c38                hci_tl_lowlevel_init
+                0x0000000008015c30       0x50 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015c30                hci_tl_lowlevel_init
  .text.hci_tl_lowlevel_isr
-                0x0000000008015c88       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
-                0x0000000008015c88                hci_tl_lowlevel_isr
+                0x0000000008015c80       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+                0x0000000008015c80                hci_tl_lowlevel_isr
  .text.startProcessing
-                0x0000000008015ca8      0x108 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015ca0      0x108 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .text.LedBlinkCb
-                0x0000000008015db0       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015da8       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .text.Send_msg_BT_terminal
-                0x0000000008015de8       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008015de8                Send_msg_BT_terminal
+                0x0000000008015de0       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015de0                Send_msg_BT_terminal
  .text.LightManagementThread
-                0x0000000008015e18       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015e10       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .text.SendMsgToHost
-                0x0000000008015e7c       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008015e7c                SendMsgToHost
+                0x0000000008015e74       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015e74                SendMsgToHost
  .text.startProc
-                0x0000000008015eb4      0x184 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008015eb4                startProc
+                0x0000000008015eac      0x184 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008015eac                startProc
  .text.stopProc
-                0x0000000008016038       0xf8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016038                stopProc
+                0x0000000008016030       0xf8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016030                stopProc
  .text.Set2GAccelerometerFullScale
-                0x0000000008016130       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016130                Set2GAccelerometerFullScale
+                0x0000000008016128       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016128                Set2GAccelerometerFullScale
  .text.Set4GAccelerometerFullScale
-                0x0000000008016168       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016168                Set4GAccelerometerFullScale
+                0x0000000008016160       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016160                Set4GAccelerometerFullScale
  .text.AccEvent_Msg
-                0x00000000080161a0       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080161a0                AccEvent_Msg
+                0x0000000008016198       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016198                AccEvent_Msg
  .text.AccStepEvent_Msg
-                0x00000000080161ba       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080161ba                AccStepEvent_Msg
+                0x00000000080161b2       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080161b2                AccStepEvent_Msg
  .text.AudioProcess_DB_Noise
-                0x00000000080161d4       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080161d4                AudioProcess_DB_Noise
+                0x00000000080161cc       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080161cc                AudioProcess_DB_Noise
  .text.AudioProcess
-                0x0000000008016210       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016210                AudioProcess
+                0x0000000008016208       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016208                AudioProcess
  .text.BSP_AUDIO_IN_HalfTransfer_CallBack
-                0x0000000008016248        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016248                BSP_AUDIO_IN_HalfTransfer_CallBack
+                0x0000000008016240        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016240                BSP_AUDIO_IN_HalfTransfer_CallBack
  .text.BSP_AUDIO_IN_TransferComplete_CallBack
-                0x000000000801624c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000801624c                BSP_AUDIO_IN_TransferComplete_CallBack
+                0x0000000008016244        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016244                BSP_AUDIO_IN_TransferComplete_CallBack
  .text.ReadEnvironmentalData
-                0x0000000008016250      0x128 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016250                ReadEnvironmentalData
+                0x0000000008016248      0x128 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016248                ReadEnvironmentalData
  .text.SystemClock_Config
-                0x0000000008016378       0xc4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016378                SystemClock_Config
+                0x0000000008016370       0xc4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016370                SystemClock_Config
  .text.startup.main
-                0x000000000801643c      0x26c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000801643c                main
+                0x0000000008016434      0x26c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016434                main
  .text.RTC_DataConfig
-                0x00000000080166a8       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080166a8                RTC_DataConfig
+                0x00000000080166a0       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080166a0                RTC_DataConfig
  .text.RTC_TimeConfig
-                0x00000000080166d4       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080166d4                RTC_TimeConfig
+                0x00000000080166cc       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080166cc                RTC_TimeConfig
  .text.RTC_AlarmConfig
-                0x0000000008016704      0x114 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016704                RTC_AlarmConfig
+                0x00000000080166fc      0x114 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080166fc                RTC_AlarmConfig
  .text.HAL_RTC_AlarmAEventCallback
-                0x0000000008016818       0x1c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016818                HAL_RTC_AlarmAEventCallback
+                0x0000000008016810       0x1c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016810                HAL_RTC_AlarmAEventCallback
  .text.RTC_GetCurrentDateTime
-                0x0000000008016834       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008016834                RTC_GetCurrentDateTime
+                0x000000000801682c       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000801682c                RTC_GetCurrentDateTime
  .text.ProcessThread
-                0x000000000801685c      0x9a4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008016854      0x9a4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .text.HAL_Delay
-                0x0000000008017200       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008017200                HAL_Delay
+                0x00000000080171f8       0x1e ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080171f8                HAL_Delay
  .text.Error_Handler
-                0x000000000801721e        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000801721e                Error_Handler
+                0x0000000008017216        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008017216                Error_Handler
  .text.HAL_GPIO_EXTI_Callback
-                0x0000000008017220       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008017220                HAL_GPIO_EXTI_Callback
+                0x0000000008017218       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008017218                HAL_GPIO_EXTI_Callback
  .text.ReCallMagnetoCalibrationFromMemory
-                0x0000000008017274       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008017274                ReCallMagnetoCalibrationFromMemory
+                0x000000000801726c       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000801726c                ReCallMagnetoCalibrationFromMemory
  .text.SaveMagnetoCalibrationToMemory
-                0x00000000080172a0       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080172a0                SaveMagnetoCalibrationToMemory
+                0x0000000008017298       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008017298                SaveMagnetoCalibrationToMemory
  .text.LedBlinkStart
-                0x0000000008017304       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x0000000008017304                LedBlinkStart
+                0x00000000080172fc       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080172fc                LedBlinkStart
  .text.LedBlinkStop
-                0x000000000801733c       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000801733c                LedBlinkStop
+                0x0000000008017334       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x0000000008017334                LedBlinkStop
  .text.HostThread
-                0x0000000008017364      0x160 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000801735c      0x160 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .text.vApplicationStackOverflowHook
-                0x00000000080174c4        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x00000000080174c4                vApplicationStackOverflowHook
- *fill*         0x00000000080174c6        0x2 
+                0x00000000080174bc        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x00000000080174bc                vApplicationStackOverflowHook
+ *fill*         0x00000000080174be        0x2 
  .text.pcf857x_Read16
-                0x00000000080174c8       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x00000000080174c8                pcf857x_Read16
+                0x00000000080174c0       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x00000000080174c0                pcf857x_Read16
  .text.pcf857x_Read
-                0x00000000080174fc       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x00000000080174fc                pcf857x_Read
+                0x00000000080174f4       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x00000000080174f4                pcf857x_Read
  .text.pcf857x_Write16
-                0x0000000008017520       0x40 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x0000000008017520                pcf857x_Write16
+                0x0000000008017518       0x40 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x0000000008017518                pcf857x_Write16
  .text.pcf857x_Init
-                0x0000000008017560       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x0000000008017560                pcf857x_Init
+                0x0000000008017558       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x0000000008017558                pcf857x_Init
  .text.pcf857x_Write
-                0x0000000008017594       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x0000000008017594                pcf857x_Write
+                0x000000000801758c       0x3c ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x000000000801758c                pcf857x_Write
  .text.pcf857x_Toggle
-                0x00000000080175d0       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
-                0x00000000080175d0                pcf857x_Toggle
+                0x00000000080175c8       0x38 ./STM32L476RG-SensorTile_ALLMEMS2/User/pcf857x.o
+                0x00000000080175c8                pcf857x_Toggle
  .text.SD_ioctl
-                0x0000000008017608       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x0000000008017608                SD_ioctl
- .text.SD_read  0x000000000801765c       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x000000000801765c                SD_read
+                0x0000000008017600       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x0000000008017600                SD_ioctl
+ .text.SD_read  0x0000000008017654       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x0000000008017654                SD_read
  .text.SD_status
-                0x0000000008017684       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x0000000008017684                SD_status
+                0x000000000801767c       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x000000000801767c                SD_status
  .text.SD_write
-                0x00000000080176a4       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x00000000080176a4                SD_write
+                0x000000000801769c       0x28 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x000000000801769c                SD_write
  .text.SD_initialize
-                0x00000000080176cc       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x00000000080176cc                SD_initialize
+                0x00000000080176c4       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x00000000080176c4                SD_initialize
  .text.safe_aci_gatt_update_char_value
-                0x00000000080176f8       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x00000000080176f8                safe_aci_gatt_update_char_value
+                0x00000000080176f0       0x2c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x00000000080176f0                safe_aci_gatt_update_char_value
  .text.Add_ConfigW2ST_Service
-                0x0000000008017724       0x70 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017724                Add_ConfigW2ST_Service
+                0x000000000801771c       0x70 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000801771c                Add_ConfigW2ST_Service
  .text.Add_ConsoleW2ST_Service
-                0x0000000008017794       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017794                Add_ConsoleW2ST_Service
+                0x000000000801778c       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000801778c                Add_ConsoleW2ST_Service
  .text.UpdateTermStdOut
-                0x000000000801783c       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x000000000801783c                UpdateTermStdOut
+                0x0000000008017834       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017834                UpdateTermStdOut
  .text.UpdateTermStdErr
-                0x000000000801786c       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x000000000801786c                UpdateTermStdErr
+                0x0000000008017864       0x30 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017864                UpdateTermStdErr
  .text.Stderr_Update
-                0x000000000801789c       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x000000000801789c                Stderr_Update
+                0x0000000008017894       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017894                Stderr_Update
  .text.Term_Update
-                0x0000000008017900       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017900                Term_Update
+                0x00000000080178f8       0x64 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x00000000080178f8                Term_Update
  .text.Quat_Update
-                0x0000000008017964       0xa0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017964                Quat_Update
+                0x000000000801795c       0xa0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000801795c                Quat_Update
  .text.ECompass_Update
-                0x0000000008017a04       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017a04                ECompass_Update
+                0x00000000080179fc       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x00000000080179fc                ECompass_Update
  .text.ActivityRec_Update
-                0x0000000008017a70       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017a70                ActivityRec_Update
+                0x0000000008017a68       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017a68                ActivityRec_Update
  .text.CarryPosRec_Update
-                0x0000000008017adc       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017adc                CarryPosRec_Update
+                0x0000000008017ad4       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017ad4                CarryPosRec_Update
  .text.GestureRec_Update
-                0x0000000008017b48       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017b48                GestureRec_Update
+                0x0000000008017b40       0x6c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017b40                GestureRec_Update
  .text.Config_Notify
-                0x0000000008017bb4       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008017bb4                Config_Notify
- *fill*         0x0000000008017bd6        0x2 
+                0x0000000008017bac       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017bac                Config_Notify
+ *fill*         0x0000000008017bce        0x2 
  .text.ConfigCommandParsing.constprop.0
-                0x0000000008017bd8      0x3c0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017bd0      0x3c0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .text.DebugConsoleCommandParsing
-                0x0000000008017f98      0x774 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008017f90      0x774 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .text.SD_CardLoggingStatus_Notify
-                0x000000000801870c       0xa0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x000000000801870c                SD_CardLoggingStatus_Notify
+                0x0000000008018704       0xa0 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018704                SD_CardLoggingStatus_Notify
  .text.SD_CardLogging_CommandParsing.constprop.0.isra.0
-                0x00000000080187ac       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x00000000080187a4       0x5c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .text.SD_CardLogging_AttributeModified_CB.isra.0
-                0x0000000008018808       0x7c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018800       0x7c ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .text.Config_NotifyBLE
-                0x0000000008018884       0x88 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008018884                Config_NotifyBLE
+                0x000000000801887c       0x88 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000801887c                Config_NotifyBLE
  .text.AccEvent_Notify
-                0x000000000801890c       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x000000000801890c                AccEvent_Notify
+                0x0000000008018904       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018904                AccEvent_Notify
  .text.Add_HW_SW_ServW2ST_Service
-                0x00000000080189b4      0x378 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x00000000080189b4                Add_HW_SW_ServW2ST_Service
+                0x00000000080189ac      0x378 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x00000000080189ac                Add_HW_SW_ServW2ST_Service
  .text.AccGyroMag_Update
-                0x0000000008018d2c       0xcc ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008018d2c                AccGyroMag_Update
+                0x0000000008018d24       0xcc ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018d24                AccGyroMag_Update
  .text.Environmental_Update
-                0x0000000008018df8      0x118 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008018df8                Environmental_Update
+                0x0000000008018df0      0x118 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018df0                Environmental_Update
  .text.AudioLevel_Update
-                0x0000000008018f10       0x70 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008018f10                AudioLevel_Update
+                0x0000000008018f08       0x70 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018f08                AudioLevel_Update
  .text.GG_Update
-                0x0000000008018f80       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008018f80                GG_Update
+                0x0000000008018f78       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008018f78                GG_Update
  .text.setConnectable
-                0x0000000008019028      0x178 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x0000000008019028                setConnectable
+                0x0000000008019020      0x178 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008019020                setConnectable
  .text.setNotConnectable
-                0x00000000080191a0        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x00000000080191a0                setNotConnectable
+                0x0000000008019198        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x0000000008019198                setNotConnectable
  .text.HCI_Event_CB
-                0x00000000080191a4      0x930 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
-                0x00000000080191a4                HCI_Event_CB
+                0x000000000801919c      0x930 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000801919c                HCI_Event_CB
  .text.HAL_RTC_MspInit
-                0x0000000008019ad4       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
-                0x0000000008019ad4                HAL_RTC_MspInit
+                0x0000000008019acc       0x54 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
+                0x0000000008019acc                HAL_RTC_MspInit
  .text.HAL_CRC_MspInit
-                0x0000000008019b28       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
-                0x0000000008019b28                HAL_CRC_MspInit
+                0x0000000008019b20       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
+                0x0000000008019b20                HAL_CRC_MspInit
  .text.HAL_CRC_MspDeInit
-                0x0000000008019b48       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
-                0x0000000008019b48                HAL_CRC_MspDeInit
+                0x0000000008019b40       0x18 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_hal_msp.o
+                0x0000000008019b40                HAL_CRC_MspDeInit
  .text.NMI_Handler
-                0x0000000008019b60        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b60                NMI_Handler
+                0x0000000008019b58        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b58                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008019b62        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b62                HardFault_Handler
+                0x0000000008019b5a        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b5a                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008019b64        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b64                MemManage_Handler
+                0x0000000008019b5c        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b5c                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008019b66        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b66                BusFault_Handler
+                0x0000000008019b5e        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b5e                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008019b68        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b68                UsageFault_Handler
+                0x0000000008019b60        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b60                UsageFault_Handler
  .text.DebugMon_Handler
-                0x0000000008019b6a        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b6a                DebugMon_Handler
+                0x0000000008019b62        0x2 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b62                DebugMon_Handler
  .text.SysTick_Handler
-                0x0000000008019b6c        0xe ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b6c                SysTick_Handler
- *fill*         0x0000000008019b7a        0x2 
+                0x0000000008019b64        0xe ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b64                SysTick_Handler
+ *fill*         0x0000000008019b72        0x2 
  .text.DMA2_Channel2_IRQHandler
-                0x0000000008019b7c        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b7c                DMA2_Channel2_IRQHandler
+                0x0000000008019b74        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b74                DMA2_Channel2_IRQHandler
  .text.RTC_Alarm_IRQHandler
-                0x0000000008019b88        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b88                RTC_Alarm_IRQHandler
+                0x0000000008019b80        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b80                RTC_Alarm_IRQHandler
  .text.DMA1_Channel4_IRQHandler
-                0x0000000008019b94        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019b94                DMA1_Channel4_IRQHandler
+                0x0000000008019b8c        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b8c                DMA1_Channel4_IRQHandler
  .text.EXTI2_IRQHandler
-                0x0000000008019ba0        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019ba0                EXTI2_IRQHandler
+                0x0000000008019b98        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b98                EXTI2_IRQHandler
  .text.EXTI3_IRQHandler
-                0x0000000008019ba6       0x10 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019ba6                EXTI3_IRQHandler
+                0x0000000008019b9e       0x10 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019b9e                EXTI3_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x0000000008019bb6        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019bb6                EXTI9_5_IRQHandler
+                0x0000000008019bae        0x6 ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019bae                EXTI9_5_IRQHandler
  .text.RTC_WKUP_IRQHandler
-                0x0000000008019bbc        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
-                0x0000000008019bbc                RTC_WKUP_IRQHandler
+                0x0000000008019bb4        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/stm32l4xx_it.o
+                0x0000000008019bb4                RTC_WKUP_IRQHandler
  .text.MotionAR_Initialize
-                0x0000000008019bc8       0x88 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
-                0x0000000008019bc8                MotionAR_Initialize
+                0x0000000008019bc0       0x88 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
+                0x0000000008019bc0                MotionAR_Initialize
  .text.MotionAR_SetOrientation_Acc
-                0x0000000008019c50      0x11c ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
-                0x0000000008019c50                MotionAR_SetOrientation_Acc
- *fill*         0x0000000008019d6c        0x4 
+                0x0000000008019c48      0x11c ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
+                0x0000000008019c48                MotionAR_SetOrientation_Acc
+ *fill*         0x0000000008019d64        0x4 
  .text.MotionAR_Update
-                0x0000000008019d70     0x1cc8 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
-                0x0000000008019d70                MotionAR_Update
+                0x0000000008019d68     0x1cc8 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
+                0x0000000008019d68                MotionAR_Update
  .text.MotionAR_GetLibVersion
-                0x000000000801ba38       0x48 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
-                0x000000000801ba38                MotionAR_GetLibVersion
+                0x000000000801ba30       0x48 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
+                0x000000000801ba30                MotionAR_GetLibVersion
  .text.MotionCP_Initialize
-                0x000000000801ba80       0xb8 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
-                0x000000000801ba80                MotionCP_Initialize
+                0x000000000801ba78       0xb8 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
+                0x000000000801ba78                MotionCP_Initialize
  .text.MotionCP_SetOrientation_Acc
-                0x000000000801bb38      0x118 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
-                0x000000000801bb38                MotionCP_SetOrientation_Acc
+                0x000000000801bb30      0x118 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
+                0x000000000801bb30                MotionCP_SetOrientation_Acc
  .text.MotionCP_Update
-                0x000000000801bc50     0x144c ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
-                0x000000000801bc50                MotionCP_Update
+                0x000000000801bc48     0x144c ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
+                0x000000000801bc48                MotionCP_Update
  .text.MotionCP_GetLibVersion
-                0x000000000801d09c       0x48 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
-                0x000000000801d09c                MotionCP_GetLibVersion
+                0x000000000801d094       0x48 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
+                0x000000000801d094                MotionCP_GetLibVersion
  .text.m_mldivide
-                0x000000000801d0e4      0x37c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d0dc      0x37c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.m_qmult_eml
-                0x000000000801d460       0x80 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d458       0x80 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.m_q2dcm_eml
-                0x000000000801d4e0       0xd4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d4d8       0xd4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_EmptyDataFrame
-                0x000000000801d5b4        0x8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d5ac        0x8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_DataBuffInit
-                0x000000000801d5bc       0x18 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d5b4       0x18 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_checkTimeToRun
-                0x000000000801d5d4       0x74 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d5cc       0x74 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.updateProcBuffer_Temp
-                0x000000000801d648       0xc4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d640       0xc4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_getSensorData_I16
-                0x000000000801d70c       0xd4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d704       0xd4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.m_dcm2q_eml
-                0x000000000801d7e0      0x1b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d7d8      0x1b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.SpacePointGyroProp
-                0x000000000801d990      0x110 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801d988      0x110 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.quatErr2EulerErr
-                0x000000000801daa0      0x1f8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801da98      0x1f8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.rt_InitInfAndNaN.isra.3
-                0x000000000801dc98       0x20 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dc90       0x20 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMSloadFromNVM.isra.10
-                0x000000000801dcb8        0x4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dcb0        0x4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMSLoadMagCalNVM
-                0x000000000801dcbc       0x80 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dcb4       0x80 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMSsaveInNVM.isra.11
-                0x000000000801dd3c        0x4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dd34        0x4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMSSaveMagCalNVM
-                0x000000000801dd40       0x54 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dd38       0x54 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.unlikely.llEvaluate.constprop.23
-                0x000000000801dd94       0xac ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801dd8c       0xac ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.iNemo_setOrientation.constprop.40
-                0x000000000801de40      0x3b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801de38      0x3b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.iNemo_setOrientation_6X.constprop.41
-                0x000000000801e1f0      0x3b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801e1e8      0x3b0 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.getMagStats.constprop.26
-                0x000000000801e5a0      0x1e4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801e598      0x1e4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_updateMagBufferIndex.constprop.24
-                0x000000000801e784      0x26c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801e77c      0x26c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.iNemo_quat2heading
-                0x000000000801e9f0      0x520 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801e9e8      0x520 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.output_update
-                0x000000000801ef10      0x4e8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801ef08      0x4e8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.MEMS_runMagCal.constprop.14
-                0x000000000801f3f8     0x26a8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x000000000801f3f0     0x26a8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.m_kalman_3gyro.isra.6.constprop.36
-                0x0000000008021aa0     0x3f7c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008021a98     0x3f7c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.SpacePointAlgorithm.isra.7
-                0x0000000008025a1c      0x3e4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008025a14      0x3e4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.iNemo_update_6X.constprop.34
-                0x0000000008025e00      0x3fc ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008025df8      0x3fc ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
  .text.iNemo_update.constprop.35
-                0x00000000080261fc      0x520 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
- *fill*         0x000000000802671c        0x4 
+                0x00000000080261f4      0x520 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+ *fill*         0x0000000008026714        0x4 
  .text.MotionFX_initialize
-                0x0000000008026720      0x4c4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026720                MotionFX_initialize
+                0x0000000008026718      0x4c4 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026718                MotionFX_initialize
  .text.MotionFX_setKnobs
-                0x0000000008026be4       0xc8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026be4                MotionFX_setKnobs
+                0x0000000008026bdc       0xc8 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026bdc                MotionFX_setKnobs
  .text.MotionFX_getKnobs
-                0x0000000008026cac       0xac ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026cac                MotionFX_getKnobs
+                0x0000000008026ca4       0xac ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026ca4                MotionFX_getKnobs
  .text.MotionFX_enable_6X
-                0x0000000008026d58       0x40 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026d58                MotionFX_enable_6X
+                0x0000000008026d50       0x40 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026d50                MotionFX_enable_6X
  .text.MotionFX_enable_9X
-                0x0000000008026d98       0x44 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026d98                MotionFX_enable_9X
+                0x0000000008026d90       0x44 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026d90                MotionFX_enable_9X
  .text.MotionFX_update
-                0x0000000008026ddc      0x384 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008026ddc                MotionFX_update
+                0x0000000008026dd4      0x384 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008026dd4                MotionFX_update
  .text.MotionFX_propagate
-                0x0000000008027160      0xaec ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008027160                MotionFX_propagate
+                0x0000000008027158      0xaec ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008027158                MotionFX_propagate
  .text.MotionFX_MagCal_init
-                0x0000000008027c4c      0x160 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008027c4c                MotionFX_MagCal_init
+                0x0000000008027c44      0x160 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008027c44                MotionFX_MagCal_init
  .text.MotionFX_MagCal_run
-                0x0000000008027dac      0x14c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008027dac                MotionFX_MagCal_run
+                0x0000000008027da4      0x14c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008027da4                MotionFX_MagCal_run
  .text.MotionFX_MagCal_getParams
-                0x0000000008027ef8       0x60 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008027ef8                MotionFX_MagCal_getParams
+                0x0000000008027ef0       0x60 ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008027ef0                MotionFX_MagCal_getParams
  .text.MotionFX_GetLibVersion
-                0x0000000008027f58       0x4c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
-                0x0000000008027f58                MotionFX_GetLibVersion
+                0x0000000008027f50       0x4c ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+                0x0000000008027f50                MotionFX_GetLibVersion
  .text.MotionGR_Initialize
-                0x0000000008027fa4       0xc0 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
-                0x0000000008027fa4                MotionGR_Initialize
+                0x0000000008027f9c       0xc0 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
+                0x0000000008027f9c                MotionGR_Initialize
  .text.MotionGR_SetOrientation_Acc
-                0x0000000008028064      0x118 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
-                0x0000000008028064                MotionGR_SetOrientation_Acc
- *fill*         0x000000000802817c        0x4 
+                0x000000000802805c      0x118 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
+                0x000000000802805c                MotionGR_SetOrientation_Acc
+ *fill*         0x0000000008028174        0x4 
  .text.MotionGR_Update
-                0x0000000008028180     0x2650 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
-                0x0000000008028180                MotionGR_Update
+                0x0000000008028178     0x2650 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
+                0x0000000008028178                MotionGR_Update
  .text.MotionGR_GetLibVersion
-                0x000000000802a7d0       0x48 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
-                0x000000000802a7d0                MotionGR_GetLibVersion
- .text.atoi     0x000000000802a818        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-atoi.o)
-                0x000000000802a818                atoi
- .text.malloc   0x000000000802a820       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-malloc.o)
-                0x000000000802a820                malloc
- .text.free     0x000000000802a830       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-malloc.o)
-                0x000000000802a830                free
+                0x000000000802a7c8       0x48 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
+                0x000000000802a7c8                MotionGR_GetLibVersion
+ .text.atoi     0x000000000802a810        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-atoi.o)
+                0x000000000802a810                atoi
+ .text.malloc   0x000000000802a818       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-malloc.o)
+                0x000000000802a818                malloc
+ .text.free     0x000000000802a828       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-malloc.o)
+                0x000000000802a828                free
  .text.sbrk_aligned
-                0x000000000802a840       0x40 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mallocr.o)
+                0x000000000802a838       0x40 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x000000000802a880      0x100 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mallocr.o)
-                0x000000000802a880                _malloc_r
+                0x000000000802a878      0x100 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mallocr.o)
+                0x000000000802a878                _malloc_r
  .text.__malloc_lock
-                0x000000000802a980        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mlock.o)
-                0x000000000802a980                __malloc_lock
+                0x000000000802a978        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mlock.o)
+                0x000000000802a978                __malloc_lock
  .text.__malloc_unlock
-                0x000000000802a98c        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mlock.o)
-                0x000000000802a98c                __malloc_unlock
+                0x000000000802a984        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-mlock.o)
+                0x000000000802a984                __malloc_unlock
  .text._strtol_l.constprop.0
-                0x000000000802a998      0x104 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strtol.o)
- .text.strtol   0x000000000802aa9c       0x14 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strtol.o)
-                0x000000000802aa9c                strtol
- .text.sprintf  0x000000000802aab0       0x40 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-sprintf.o)
-                0x000000000802aab0                siprintf
-                0x000000000802aab0                sprintf
- .text.memmove  0x000000000802aaf0       0x34 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memmove.o)
-                0x000000000802aaf0                memmove
- .text.memset   0x000000000802ab24       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memset.o)
-                0x000000000802ab24                memset
- .text.strncmp  0x000000000802ab34       0x24 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strncmp.o)
-                0x000000000802ab34                strncmp
- .text.strncpy  0x000000000802ab58       0x26 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strncpy.o)
-                0x000000000802ab58                strncpy
- *fill*         0x000000000802ab7e        0x2 
- .text._sbrk_r  0x000000000802ab80       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-sbrkr.o)
-                0x000000000802ab80                _sbrk_r
- .text.__errno  0x000000000802aba0        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-errno.o)
-                0x000000000802aba0                __errno
+                0x000000000802a990      0x104 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strtol.o)
+ .text.strtol   0x000000000802aa94       0x14 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strtol.o)
+                0x000000000802aa94                strtol
+ .text.sprintf  0x000000000802aaa8       0x40 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-sprintf.o)
+                0x000000000802aaa8                siprintf
+                0x000000000802aaa8                sprintf
+ .text.memmove  0x000000000802aae8       0x34 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memmove.o)
+                0x000000000802aae8                memmove
+ .text.memset   0x000000000802ab1c       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memset.o)
+                0x000000000802ab1c                memset
+ .text.strncmp  0x000000000802ab2c       0x24 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strncmp.o)
+                0x000000000802ab2c                strncmp
+ .text.strncpy  0x000000000802ab50       0x26 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strncpy.o)
+                0x000000000802ab50                strncpy
+ *fill*         0x000000000802ab76        0x2 
+ .text._sbrk_r  0x000000000802ab78       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-sbrkr.o)
+                0x000000000802ab78                _sbrk_r
+ .text.__errno  0x000000000802ab98        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-errno.o)
+                0x000000000802ab98                __errno
  .text.__libc_init_array
-                0x000000000802abac       0x48 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-init.o)
-                0x000000000802abac                __libc_init_array
+                0x000000000802aba4       0x48 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-init.o)
+                0x000000000802aba4                __libc_init_array
  .text.__retarget_lock_acquire_recursive
-                0x000000000802abf4        0x2 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-lock.o)
-                0x000000000802abf4                __retarget_lock_acquire_recursive
+                0x000000000802abec        0x2 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-lock.o)
+                0x000000000802abec                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000802abf6        0x2 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-lock.o)
-                0x000000000802abf6                __retarget_lock_release_recursive
- .text.strcpy   0x000000000802abf8       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strcpy.o)
-                0x000000000802abf8                strcpy
+                0x000000000802abee        0x2 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-lock.o)
+                0x000000000802abee                __retarget_lock_release_recursive
+ .text.strcpy   0x000000000802abf0       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-strcpy.o)
+                0x000000000802abf0                strcpy
  .text.__aeabi_memcpy
-                0x000000000802ac08        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-aeabi_memcpy.o)
-                0x000000000802ac08                __aeabi_memcpy4
-                0x000000000802ac08                __aeabi_memcpy8
-                0x000000000802ac08                __aeabi_memcpy
+                0x000000000802ac00        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-aeabi_memcpy.o)
+                0x000000000802ac00                __aeabi_memcpy4
+                0x000000000802ac00                __aeabi_memcpy8
+                0x000000000802ac00                __aeabi_memcpy
  .text.__aeabi_memclr
-                0x000000000802ac0c        0x6 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-aeabi_memclr.o)
-                0x000000000802ac0c                __aeabi_memclr
-                0x000000000802ac0c                __aeabi_memclr4
-                0x000000000802ac0c                __aeabi_memclr8
- .text.memcpy   0x000000000802ac12       0x1c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memcpy-stub.o)
-                0x000000000802ac12                memcpy
- *fill*         0x000000000802ac2e        0x2 
- .text._free_r  0x000000000802ac30       0x98 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-freer.o)
-                0x000000000802ac30                _free_r
+                0x000000000802ac04        0x6 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-aeabi_memclr.o)
+                0x000000000802ac04                __aeabi_memclr
+                0x000000000802ac04                __aeabi_memclr4
+                0x000000000802ac04                __aeabi_memclr8
+ .text.memcpy   0x000000000802ac0a       0x1c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-memcpy-stub.o)
+                0x000000000802ac0a                memcpy
+ *fill*         0x000000000802ac26        0x2 
+ .text._free_r  0x000000000802ac28       0x98 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-freer.o)
+                0x000000000802ac28                _free_r
  .text.__ssputs_r
-                0x000000000802acc8       0xb4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x000000000802acc8                __ssputs_r
+                0x000000000802acc0       0xb4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000802acc0                __ssputs_r
  .text._svfprintf_r
-                0x000000000802ad7c      0x1fc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
-                0x000000000802ad7c                _svfiprintf_r
-                0x000000000802ad7c                _svfprintf_r
+                0x000000000802ad74      0x1fc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000802ad74                _svfiprintf_r
+                0x000000000802ad74                _svfprintf_r
  .text._printf_common
-                0x000000000802af78       0xda C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x000000000802af78                _printf_common
- *fill*         0x000000000802b052        0x2 
+                0x000000000802af70       0xda C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000000000802af70                _printf_common
+ *fill*         0x000000000802b04a        0x2 
  .text._printf_i
-                0x000000000802b054      0x244 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
-                0x000000000802b054                _printf_i
+                0x000000000802b04c      0x244 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000000000802b04c                _printf_i
  .text._realloc_r
-                0x000000000802b298       0x5e C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-reallocr.o)
-                0x000000000802b298                _realloc_r
+                0x000000000802b290       0x5e C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-reallocr.o)
+                0x000000000802b290                _realloc_r
  .text._malloc_usable_size_r
-                0x000000000802b2f6       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-msizer.o)
-                0x000000000802b2f6                _malloc_usable_size_r
- *fill*         0x000000000802b306        0x2 
- .text.asin     0x000000000802b308       0x50 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_asin.o)
-                0x000000000802b308                asin
- .text.atan2    0x000000000802b358        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_atan2.o)
-                0x000000000802b358                atan2
- .text.pow      0x000000000802b35c       0xd0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_pow.o)
-                0x000000000802b35c                pow
- .text.sqrt     0x000000000802b42c       0x48 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_sqrt.o)
-                0x000000000802b42c                sqrt
- *fill*         0x000000000802b474        0x4 
- .text.atan     0x000000000802b478      0x320 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
-                0x000000000802b478                atan
- .text.fabs     0x000000000802b798        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_fabs.o)
-                0x000000000802b798                fabs
- .text.acosf    0x000000000802b7a0       0x58 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_acos.o)
-                0x000000000802b7a0                acosf
- .text.log10f   0x000000000802b7f8       0x5c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_log10.o)
-                0x000000000802b7f8                log10f
- .text.atanf    0x000000000802b854      0x1ac C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
-                0x000000000802b854                atanf
- .text.cosf     0x000000000802ba00       0x80 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_cos.o)
-                0x000000000802ba00                cosf
- .text.fabsf    0x000000000802ba80        0x6 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_fabs.o)
-                0x000000000802ba80                fabsf
- *fill*         0x000000000802ba86        0x2 
- .text.sinf     0x000000000802ba88       0x84 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_sin.o)
-                0x000000000802ba88                sinf
- .text.tanf     0x000000000802bb0c       0x54 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_tan.o)
-                0x000000000802bb0c                tanf
- .text.finite   0x000000000802bb60        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_finite.o)
-                0x000000000802bb60                finite
- .text.nan      0x000000000802bb6c        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_nan.o)
-                0x000000000802bb6c                nan
- .text.nanf     0x000000000802bb78        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_nan.o)
-                0x000000000802bb78                nanf
+                0x000000000802b2ee       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-msizer.o)
+                0x000000000802b2ee                _malloc_usable_size_r
+ *fill*         0x000000000802b2fe        0x2 
+ .text.asin     0x000000000802b300       0x50 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_asin.o)
+                0x000000000802b300                asin
+ .text.atan2    0x000000000802b350        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_atan2.o)
+                0x000000000802b350                atan2
+ .text.pow      0x000000000802b354       0xd0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_pow.o)
+                0x000000000802b354                pow
+ .text.sqrt     0x000000000802b424       0x48 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_sqrt.o)
+                0x000000000802b424                sqrt
+ *fill*         0x000000000802b46c        0x4 
+ .text.atan     0x000000000802b470      0x320 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
+                0x000000000802b470                atan
+ .text.fabs     0x000000000802b790        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_fabs.o)
+                0x000000000802b790                fabs
+ .text.acosf    0x000000000802b798       0x58 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_acos.o)
+                0x000000000802b798                acosf
+ .text.log10f   0x000000000802b7f0       0x5c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_log10.o)
+                0x000000000802b7f0                log10f
+ .text.atanf    0x000000000802b84c      0x1ac C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
+                0x000000000802b84c                atanf
+ .text.cosf     0x000000000802b9f8       0x80 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_cos.o)
+                0x000000000802b9f8                cosf
+ .text.fabsf    0x000000000802ba78        0x6 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_fabs.o)
+                0x000000000802ba78                fabsf
+ *fill*         0x000000000802ba7e        0x2 
+ .text.sinf     0x000000000802ba80       0x84 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_sin.o)
+                0x000000000802ba80                sinf
+ .text.tanf     0x000000000802bb04       0x54 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_tan.o)
+                0x000000000802bb04                tanf
+ .text.finite   0x000000000802bb58        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_finite.o)
+                0x000000000802bb58                finite
+ .text.nan      0x000000000802bb64        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_nan.o)
+                0x000000000802bb64                nan
+ .text.nanf     0x000000000802bb70        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_nan.o)
+                0x000000000802bb70                nanf
  .text.__ieee754_sqrt
-                0x000000000802bb80      0x1b8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_sqrt.o)
-                0x000000000802bb80                __ieee754_sqrt
- .text.floor    0x000000000802bd38      0x100 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_floor.o)
-                0x000000000802bd38                floor
- .text.trunc    0x000000000802be38       0x68 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_trunc.o)
-                0x000000000802be38                trunc
- .text.roundf   0x000000000802bea0       0x4c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_round.o)
-                0x000000000802bea0                roundf
- *fill*         0x000000000802beec        0x4 
+                0x000000000802bb78      0x1b8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_sqrt.o)
+                0x000000000802bb78                __ieee754_sqrt
+ .text.floor    0x000000000802bd30      0x100 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_floor.o)
+                0x000000000802bd30                floor
+ .text.trunc    0x000000000802be30       0x68 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_trunc.o)
+                0x000000000802be30                trunc
+ .text.roundf   0x000000000802be98       0x4c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_round.o)
+                0x000000000802be98                roundf
+ *fill*         0x000000000802bee4        0x4 
  .text.__ieee754_asin
-                0x000000000802bef0      0x400 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_asin.o)
-                0x000000000802bef0                __ieee754_asin
+                0x000000000802bee8      0x400 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_asin.o)
+                0x000000000802bee8                __ieee754_asin
  .text.__ieee754_atan2
-                0x000000000802c2f0      0x19c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
-                0x000000000802c2f0                __ieee754_atan2
- *fill*         0x000000000802c48c        0x4 
+                0x000000000802c2e8      0x19c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
+                0x000000000802c2e8                __ieee754_atan2
+ *fill*         0x000000000802c484        0x4 
  .text.__ieee754_pow
-                0x000000000802c490      0xa3c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
-                0x000000000802c490                __ieee754_pow
+                0x000000000802c488      0xa3c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
+                0x000000000802c488                __ieee754_pow
  .text.__kernel_cosf
-                0x000000000802cecc       0xbc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_cos.o)
-                0x000000000802cecc                __kernel_cosf
+                0x000000000802cec4       0xbc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_cos.o)
+                0x000000000802cec4                __kernel_cosf
  .text.__kernel_sinf
-                0x000000000802cf88       0x98 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_sin.o)
-                0x000000000802cf88                __kernel_sinf
+                0x000000000802cf80       0x98 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_sin.o)
+                0x000000000802cf80                __kernel_sinf
  .text.__kernel_tanf
-                0x000000000802d020      0x1c4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_tan.o)
-                0x000000000802d020                __kernel_tanf
+                0x000000000802d018      0x1c4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_tan.o)
+                0x000000000802d018                __kernel_tanf
  .text.__ieee754_acosf
-                0x000000000802d1e4      0x1fc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_acos.o)
-                0x000000000802d1e4                __ieee754_acosf
+                0x000000000802d1dc      0x1fc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_acos.o)
+                0x000000000802d1dc                __ieee754_acosf
  .text.__ieee754_log10f
-                0x000000000802d3e0       0xb4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_log10.o)
-                0x000000000802d3e0                __ieee754_log10f
+                0x000000000802d3d8       0xb4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_log10.o)
+                0x000000000802d3d8                __ieee754_log10f
  .text.__ieee754_rem_pio2f
-                0x000000000802d494      0x254 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
-                0x000000000802d494                __ieee754_rem_pio2f
- .text.scalbn   0x000000000802d6e8       0xec C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_scalbn.o)
-                0x000000000802d6e8                scalbn
+                0x000000000802d48c      0x254 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
+                0x000000000802d48c                __ieee754_rem_pio2f
+ .text.scalbn   0x000000000802d6e0       0xec C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_scalbn.o)
+                0x000000000802d6e0                scalbn
  .text.with_errno
-                0x000000000802d7d4       0x14 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
- .text.xflow    0x000000000802d7e8       0x28 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
+                0x000000000802d7cc       0x14 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
+ .text.xflow    0x000000000802d7e0       0x28 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
  .text.__math_uflow
-                0x000000000802d810        0xa C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
-                0x000000000802d810                __math_uflow
+                0x000000000802d808        0xa C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
+                0x000000000802d808                __math_uflow
  .text.__math_oflow
-                0x000000000802d81a        0xa C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
-                0x000000000802d81a                __math_oflow
+                0x000000000802d812        0xa C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-math_err.o)
+                0x000000000802d812                __math_oflow
  .text.__ieee754_sqrtf
-                0x000000000802d824        0xe C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_sqrt.o)
-                0x000000000802d824                __ieee754_sqrtf
- *fill*         0x000000000802d832        0x2 
+                0x000000000802d81c        0xe C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_sqrt.o)
+                0x000000000802d81c                __ieee754_sqrtf
+ *fill*         0x000000000802d82a        0x2 
  .text.__kernel_rem_pio2f
-                0x000000000802d834      0x4f8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
-                0x000000000802d834                __kernel_rem_pio2f
+                0x000000000802d82c      0x4f8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
+                0x000000000802d82c                __kernel_rem_pio2f
  .text.__ieee754_logf
-                0x000000000802dd2c      0x1e8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_log.o)
-                0x000000000802dd2c                __ieee754_logf
- .text.scalbnf  0x000000000802df14       0xd0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_scalbn.o)
-                0x000000000802df14                scalbnf
- .text.floorf   0x000000000802dfe4       0x8c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_floor.o)
-                0x000000000802dfe4                floorf
+                0x000000000802dd24      0x1e8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_log.o)
+                0x000000000802dd24                __ieee754_logf
+ .text.scalbnf  0x000000000802df0c       0xd0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_scalbn.o)
+                0x000000000802df0c                scalbnf
+ .text.floorf   0x000000000802dfdc       0x8c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_floor.o)
+                0x000000000802dfdc                floorf
  *(.glue_7)
- .glue_7        0x000000000802e070        0x0 linker stubs
+ .glue_7        0x000000000802e068        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000802e070        0x0 linker stubs
+ .glue_7t       0x000000000802e068        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000802e070        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
+ .eh_frame      0x000000000802e068        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
  *(.init)
- .init          0x000000000802e070        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crti.o
-                0x000000000802e070                _init
- .init          0x000000000802e074        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtn.o
+ .init          0x000000000802e068        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crti.o
+                0x000000000802e068                _init
+ .init          0x000000000802e06c        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtn.o
  *(.fini)
- .fini          0x000000000802e07c        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crti.o
-                0x000000000802e07c                _fini
- .fini          0x000000000802e080        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtn.o
-                0x000000000802e088                . = ALIGN (0x8)
-                0x000000000802e088                _etext = .
+ .fini          0x000000000802e074        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crti.o
+                0x000000000802e074                _fini
+ .fini          0x000000000802e078        0x8 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtn.o
+                0x000000000802e080                . = ALIGN (0x8)
+                0x000000000802e080                _etext = .
 
-.vfp11_veneer   0x000000000802e088        0x0
- .vfp11_veneer  0x000000000802e088        0x0 linker stubs
+.vfp11_veneer   0x000000000802e080        0x0
+ .vfp11_veneer  0x000000000802e080        0x0 linker stubs
 
-.v4_bx          0x000000000802e088        0x0
- .v4_bx         0x000000000802e088        0x0 linker stubs
+.v4_bx          0x000000000802e080        0x0
+ .v4_bx         0x000000000802e080        0x0 linker stubs
 
-.iplt           0x000000000802e088        0x0
- .iplt          0x000000000802e088        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
+.iplt           0x000000000802e080        0x0
+ .iplt          0x000000000802e080        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
 
-.rodata         0x000000000802e088     0x1f38
-                0x000000000802e088                . = ALIGN (0x8)
+.rodata         0x000000000802e080     0x1f38
+                0x000000000802e080                . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x000000000802e088       0x40 ./Drivers/BSP/Components/STC3115_Driver.o
- .rodata        0x000000000802e0c8        0xa ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
- *fill*         0x000000000802e0d2        0x2 
- .rodata        0x000000000802e0d4       0x23 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
- *fill*         0x000000000802e0f7        0x1 
- .rodata        0x000000000802e0f8      0x2f3 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
- *fill*         0x000000000802e3eb        0x1 
- .rodata        0x000000000802e3ec      0x1bb ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
- *fill*         0x000000000802e5a7        0x1 
- .rodata        0x000000000802e5a8       0x23 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
+ .rodata        0x000000000802e080       0x40 ./Drivers/BSP/Components/STC3115_Driver.o
+ .rodata        0x000000000802e0c0        0xa ./STM32L476RG-SensorTile_ALLMEMS2/User/hci_tl_interface.o
+ *fill*         0x000000000802e0ca        0x2 
+ .rodata        0x000000000802e0cc       0x23 ../../../../../../../Middlewares/ST/STM32_MotionAR_Library/Lib\MotionAR_CM4F_wc32_ot.a(motion_ar.o)
+ *fill*         0x000000000802e0ef        0x1 
+ .rodata        0x000000000802e0f0      0x2f3 ../../../../../../../Middlewares/ST/STM32_MotionCP_Library/Lib\MotionCP_CM4F_wc32_ot.a(motion_cp.o)
+ *fill*         0x000000000802e3e3        0x1 
+ .rodata        0x000000000802e3e4      0x1bb ../../../../../../../Middlewares/ST/STM32_MotionFX_Library/Lib\MotionFX_CM4F_wc32_ot.a(motion_fx.o)
+ *fill*         0x000000000802e59f        0x1 
+ .rodata        0x000000000802e5a0       0x23 ../../../../../../../Middlewares/ST/STM32_MotionGR_Library/Lib\MotionGR_CM4F_wc32_ot.a(motion_gr.o)
  *(.rodata*)
- *fill*         0x000000000802e5cb        0x1 
+ *fill*         0x000000000802e5c3        0x1 
  .rodata.GPIO_PIN
-                0x000000000802e5cc        0x8 ./Drivers/BSP/SensorTile/SensorTile.o
-                0x000000000802e5cc                GPIO_PIN
+                0x000000000802e5c4        0x8 ./Drivers/BSP/SensorTile/SensorTile.o
+                0x000000000802e5c4                GPIO_PIN
  .rodata.FunctionIndex
-                0x000000000802e5d4       0x14 ./Drivers/BSP/SensorTile/SensorTile_env_sensors.o
+                0x000000000802e5cc       0x14 ./Drivers/BSP/SensorTile/SensorTile_env_sensors.o
  .rodata.FunctionIndex
-                0x000000000802e5e8       0x14 ./Drivers/BSP/SensorTile/SensorTile_motion_sensors.o
+                0x000000000802e5e0       0x14 ./Drivers/BSP/SensorTile/SensorTile_motion_sensors.o
  .rodata.AHBPrescTable
-                0x000000000802e5fc       0x10 ./Drivers/CMSIS/system_stm32l4xx.o
-                0x000000000802e5fc                AHBPrescTable
+                0x000000000802e5f4       0x10 ./Drivers/CMSIS/system_stm32l4xx.o
+                0x000000000802e5f4                AHBPrescTable
  .rodata.MSIRangeTable
-                0x000000000802e60c       0x30 ./Drivers/CMSIS/system_stm32l4xx.o
-                0x000000000802e60c                MSIRangeTable
+                0x000000000802e604       0x30 ./Drivers/CMSIS/system_stm32l4xx.o
+                0x000000000802e604                MSIRangeTable
  .rodata.follow_path.str1.1
-                0x000000000802e63c       0x10 ./Middlewares/FatFs/Core/ff.o
- .rodata.ExCvt  0x000000000802e64c       0x80 ./Middlewares/FatFs/Core/ff.o
+                0x000000000802e634       0x10 ./Middlewares/FatFs/Core/ff.o
+ .rodata.ExCvt  0x000000000802e644       0x80 ./Middlewares/FatFs/Core/ff.o
  .rodata.LfnOfs
-                0x000000000802e6cc        0xd ./Middlewares/FatFs/Core/ff.o
- *fill*         0x000000000802e6d9        0x1 
- .rodata.Tbl    0x000000000802e6da      0x100 ./Middlewares/FatFs/Options/unicode.o
+                0x000000000802e6c4        0xd ./Middlewares/FatFs/Core/ff.o
+ *fill*         0x000000000802e6d1        0x1 
+ .rodata.Tbl    0x000000000802e6d2      0x100 ./Middlewares/FatFs/Options/unicode.o
  .rodata.cvt1.1
-                0x000000000802e7da      0x1f2 ./Middlewares/FatFs/Options/unicode.o
+                0x000000000802e7d2      0x1f2 ./Middlewares/FatFs/Options/unicode.o
  .rodata.cvt2.0
-                0x000000000802e9cc       0xbc ./Middlewares/FatFs/Options/unicode.o
+                0x000000000802e9c4       0xbc ./Middlewares/FatFs/Options/unicode.o
  .rodata.osTimerCreate.str1.1
-                0x000000000802ea88       0x10 ./Middlewares/FreeRTOS/CMSIS_RTOS/cmsis_os.o
+                0x000000000802ea80       0x10 ./Middlewares/FreeRTOS/CMSIS_RTOS/cmsis_os.o
                                           0x1 (size before relaxing)
  .rodata.vTaskStartScheduler.str1.1
-                0x000000000802ea88        0x5 ./Middlewares/FreeRTOS/tasks.o
+                0x000000000802ea80        0x5 ./Middlewares/FreeRTOS/tasks.o
  .rodata.prvCheckForValidListAndQueue.str1.1
-                0x000000000802ea8d        0x5 ./Middlewares/FreeRTOS/timers.o
+                0x000000000802ea85        0x5 ./Middlewares/FreeRTOS/timers.o
  .rodata.xTimerCreateTimerTask.str1.1
-                0x000000000802ea92        0x8 ./Middlewares/FreeRTOS/timers.o
+                0x000000000802ea8a        0x8 ./Middlewares/FreeRTOS/timers.o
  .rodata.SD_CardLoggingMemsStart.str1.1
-                0x000000000802ea9a       0xac ./STM32L476RG-SensorTile_ALLMEMS2/User/DataLog_Manager.o
+                0x000000000802ea92       0xac ./STM32L476RG-SensorTile_ALLMEMS2/User/DataLog_Manager.o
  .rodata.SD_CardLoggingMemsStop.str1.1
-                0x000000000802eb46       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/DataLog_Manager.o
+                0x000000000802eb3e       0x34 ./STM32L476RG-SensorTile_ALLMEMS2/User/DataLog_Manager.o
  .rodata.Send_signal_to_terminal.str1.1
-                0x000000000802eb7a      0x102 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x000000000802eb72      0x102 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
  .rodata.SignalDelay.str1.1
-                0x000000000802ec7c        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x000000000802ec74        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
  .rodata.PeriodicTimerStart.str1.1
-                0x000000000802ec88        0x1 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
+                0x000000000802ec80        0x1 ./STM32L476RG-SensorTile_ALLMEMS2/User/Light_Manager.o
  .rodata.DATALOG_SD_Log_Enable.str1.1
-                0x000000000802ec88      0x1b4 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x000000000802ec80      0x1b4 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
  .rodata.DATALOG_SD_LogAudio_Enable.str1.1
-                0x000000000802ee3c       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x000000000802ee34       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
  .rodata.saveData.str1.1
-                0x000000000802ee60       0x88 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
+                0x000000000802ee58       0x88 ./STM32L476RG-SensorTile_ALLMEMS2/User/datalog_application.o
  .rodata.LightManagementThread.str1.1
-                0x000000000802eee8       0x2e ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802eee0       0x2e ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .rodata.main.str1.1
-                0x000000000802ef16        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802ef0e        0x8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .rodata.RTC_AlarmConfig.str1.1
-                0x000000000802ef1e       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802ef16       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .rodata.ProcessThread.str1.1
-                0x000000000802ef3e       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802ef36       0xa8 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .rodata.SaveMagnetoCalibrationToMemory.str1.1
-                0x000000000802efe6       0x2d ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802efde       0x2d ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
  .rodata.str1.1
-                0x000000000802f013       0x1b ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
- *fill*         0x000000000802f02e        0x2 
+                0x000000000802f00b       0x1b ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+ *fill*         0x000000000802f026        0x2 
  .rodata.os_mailQ_def_mail
-                0x000000000802f030        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f030                os_mailQ_def_mail
+                0x000000000802f028        0xc ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f028                os_mailQ_def_mail
  .rodata.os_mutex_def_MUT_M1
-                0x000000000802f03c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f03c                os_mutex_def_MUT_M1
+                0x000000000802f034        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f034                os_mutex_def_MUT_M1
  .rodata.os_semaphore_def_SEM_Sm1
-                0x000000000802f040        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f040                os_semaphore_def_SEM_Sm1
+                0x000000000802f038        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f038                os_semaphore_def_SEM_Sm1
  .rodata.os_thread_def_THREAD_1
-                0x000000000802f044       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f044                os_thread_def_THREAD_1
+                0x000000000802f03c       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f03c                os_thread_def_THREAD_1
  .rodata.os_thread_def_THREAD_2
-                0x000000000802f058       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f058                os_thread_def_THREAD_2
+                0x000000000802f050       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f050                os_thread_def_THREAD_2
  .rodata.os_thread_def_THREAD_3
-                0x000000000802f06c       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f06c                os_thread_def_THREAD_3
+                0x000000000802f064       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f064                os_thread_def_THREAD_3
  .rodata.os_timer_def_TimerActivityHandle
-                0x000000000802f080        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f080                os_timer_def_TimerActivityHandle
+                0x000000000802f078        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f078                os_timer_def_TimerActivityHandle
  .rodata.os_timer_def_TimerAudioLevHandle
-                0x000000000802f084        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f084                os_timer_def_TimerAudioLevHandle
+                0x000000000802f07c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f07c                os_timer_def_TimerAudioLevHandle
  .rodata.os_timer_def_TimerBatHandle
-                0x000000000802f088        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f088                os_timer_def_TimerBatHandle
+                0x000000000802f080        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f080                os_timer_def_TimerBatHandle
  .rodata.os_timer_def_TimerCarryHandle
-                0x000000000802f08c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f08c                os_timer_def_TimerCarryHandle
+                0x000000000802f084        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f084                os_timer_def_TimerCarryHandle
  .rodata.os_timer_def_TimerCompassHandle
-                0x000000000802f090        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f090                os_timer_def_TimerCompassHandle
+                0x000000000802f088        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f088                os_timer_def_TimerCompassHandle
  .rodata.os_timer_def_TimerEnvHandle
-                0x000000000802f094        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f094                os_timer_def_TimerEnvHandle
+                0x000000000802f08c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f08c                os_timer_def_TimerEnvHandle
  .rodata.os_timer_def_TimerGestureHandle
-                0x000000000802f098        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f098                os_timer_def_TimerGestureHandle
+                0x000000000802f090        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f090                os_timer_def_TimerGestureHandle
  .rodata.os_timer_def_TimerLedHandle
-                0x000000000802f09c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f09c                os_timer_def_TimerLedHandle
+                0x000000000802f094        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f094                os_timer_def_TimerLedHandle
  .rodata.os_timer_def_TimerMotionHandle
-                0x000000000802f0a0        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f0a0                os_timer_def_TimerMotionHandle
+                0x000000000802f098        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f098                os_timer_def_TimerMotionHandle
  .rodata.os_timer_def_TimerQuatHandle
-                0x000000000802f0a4        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f0a4                os_timer_def_TimerQuatHandle
+                0x000000000802f09c        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f09c                os_timer_def_TimerQuatHandle
  .rodata.os_timer_def_TimerSdRecordingHandle
-                0x000000000802f0a8        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
-                0x000000000802f0a8                os_timer_def_TimerSdRecordingHandle
+                0x000000000802f0a0        0x4 ./STM32L476RG-SensorTile_ALLMEMS2/User/main.o
+                0x000000000802f0a0                os_timer_def_TimerSdRecordingHandle
  .rodata.SD_Driver
-                0x000000000802f0ac       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
-                0x000000000802f0ac                SD_Driver
+                0x000000000802f0a4       0x14 ./STM32L476RG-SensorTile_ALLMEMS2/User/sd_diskio_SensorTile.o
+                0x000000000802f0a4                SD_Driver
  .rodata.Quat_Update.str1.1
-                0x000000000802f0c0       0x1b ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f0b8       0x1b ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.ECompass_Update.str1.1
-                0x000000000802f0db       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f0d3       0x20 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.ActivityRec_Update.str1.1
-                0x000000000802f0fb       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f0f3       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.CarryPosRec_Update.str1.1
-                0x000000000802f11d       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f115       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.GestureRec_Update.str1.1
-                0x000000000802f13f       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f137       0x22 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.ConfigCommandParsing.constprop.0.str1.1
-                0x000000000802f161      0x115 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f159      0x115 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.DebugConsoleCommandParsing.str1.1
-                0x000000000802f276      0x563 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f26e      0x563 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
                                         0x5c2 (size before relaxing)
  .rodata.SD_CardLoggingStatus_Notify.str1.1
-                0x000000000802f7d9       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f7d1       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.SD_CardLogging_AttributeModified_CB.isra.0.str1.1
-                0x000000000802f7fd       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f7f5       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.AccEvent_Notify.str1.1
-                0x000000000802f821       0x26 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f819       0x26 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.AccGyroMag_Update.str1.1
-                0x000000000802f847       0x23 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f83f       0x23 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.Environmental_Update.str1.1
-                0x000000000802f86a       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f862       0x24 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.AudioLevel_Update.str1.1
-                0x000000000802f88e       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f886       0x1a ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.GG_Update.str1.1
-                0x000000000802f8a8       0x19 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f8a0       0x19 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata.HCI_Event_CB.str1.1
-                0x000000000802f8c1      0x139 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
+                0x000000000802f8b9      0x139 ./STM32L476RG-SensorTile_ALLMEMS2/User/sensor_service.o
  .rodata._ctype_
-                0x000000000802f9fa      0x101 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-ctype_.o)
-                0x000000000802f9fa                _ctype_
+                0x000000000802f9f2      0x101 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-ctype_.o)
+                0x000000000802f9f2                _ctype_
  .rodata._svfprintf_r.str1.1
-                0x000000000802fafb       0x11 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
+                0x000000000802faf3       0x11 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x000000000802fb0c       0x22 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x000000000802fb04       0x22 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libc_nano.a(libc_a-nano-vfprintf_i.o)
  .rodata.asin.str1.1
-                0x000000000802fb2e        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_asin.o)
- *fill*         0x000000000802fb2e        0x2 
+                0x000000000802fb26        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-w_asin.o)
+ *fill*         0x000000000802fb26        0x2 
  .rodata.atanhi
-                0x000000000802fb30       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
+                0x000000000802fb28       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
  .rodata.atanlo
-                0x000000000802fb50       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
+                0x000000000802fb48       0x20 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-s_atan.o)
  .rodata.acosf.str1.1
-                0x000000000802fb70        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_acos.o)
+                0x000000000802fb68        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_acos.o)
  .rodata.log10f.str1.1
-                0x000000000802fb70        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_log10.o)
+                0x000000000802fb68        0x1 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-wf_log10.o)
  .rodata.atanhi
-                0x000000000802fb70       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
+                0x000000000802fb68       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
  .rodata.atanlo
-                0x000000000802fb80       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
+                0x000000000802fb78       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-sf_atan.o)
  .rodata.CSWTCH.8
-                0x000000000802fb90       0x18 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
+                0x000000000802fb88       0x18 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
  .rodata.CSWTCH.9
-                0x000000000802fba8       0x18 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
- .rodata.bp     0x000000000802fbc0       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
- .rodata.dp_h   0x000000000802fbd0       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
- .rodata.dp_l   0x000000000802fbe0       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
+                0x000000000802fba0       0x18 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_atan2.o)
+ .rodata.bp     0x000000000802fbb8       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
+ .rodata.dp_h   0x000000000802fbc8       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
+ .rodata.dp_l   0x000000000802fbd8       0x10 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-e_pow.o)
  .rodata.npio2_hw
-                0x000000000802fbf0       0x80 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
+                0x000000000802fbe8       0x80 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
  .rodata.two_over_pi
-                0x000000000802fc70      0x318 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
- .rodata.PIo2   0x000000000802ff88       0x2c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
+                0x000000000802fc68      0x318 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-ef_rem_pio2.o)
+ .rodata.PIo2   0x000000000802ff80       0x2c C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
  .rodata.init_jk
-                0x000000000802ffb4        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
-                0x000000000802ffc0                . = ALIGN (0x8)
+                0x000000000802ffac        0xc C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp\libm.a(libm_a-kf_rem_pio2.o)
+                0x000000000802ffb8                . = ALIGN (0x8)
 
-.rel.dyn        0x000000000802ffc0        0x0
- .rel.iplt      0x000000000802ffc0        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
+.rel.dyn        0x000000000802ffb8        0x0
+ .rel.iplt      0x000000000802ffb8        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
 
-.ARM.extab      0x000000000802ffc0        0x0
-                0x000000000802ffc0                . = ALIGN (0x8)
+.ARM.extab      0x000000000802ffb8        0x0
+                0x000000000802ffb8                . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000802ffc0                . = ALIGN (0x8)
+                0x000000000802ffb8                . = ALIGN (0x8)
 
-.ARM            0x000000000802ffc0        0x0
-                0x000000000802ffc0                . = ALIGN (0x8)
-                0x000000000802ffc0                __exidx_start = .
+.ARM            0x000000000802ffb8        0x0
+                0x000000000802ffb8                . = ALIGN (0x8)
+                0x000000000802ffb8                __exidx_start = .
  *(.ARM.exidx*)
-                0x000000000802ffc0                __exidx_end = .
-                0x000000000802ffc0                . = ALIGN (0x8)
+                0x000000000802ffb8                __exidx_end = .
+                0x000000000802ffb8                . = ALIGN (0x8)
 
-.preinit_array  0x000000000802ffc0        0x0
-                0x000000000802ffc0                . = ALIGN (0x8)
-                0x000000000802ffc0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000802ffb8        0x0
+                0x000000000802ffb8                . = ALIGN (0x8)
+                0x000000000802ffb8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000000802ffc0                PROVIDE (__preinit_array_end = .)
-                0x000000000802ffc0                . = ALIGN (0x8)
+                0x000000000802ffb8                PROVIDE (__preinit_array_end = .)
+                0x000000000802ffb8                . = ALIGN (0x8)
 
-.init_array     0x000000000802ffc0        0x8
-                0x000000000802ffc0                . = ALIGN (0x8)
-                0x000000000802ffc0                PROVIDE (__init_array_start = .)
+.init_array     0x000000000802ffb8        0x8
+                0x000000000802ffb8                . = ALIGN (0x8)
+                0x000000000802ffb8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000802ffc0        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
-                0x000000000802ffc4                PROVIDE (__init_array_end = .)
-                0x000000000802ffc8                . = ALIGN (0x8)
- *fill*         0x000000000802ffc4        0x4 
+ .init_array    0x000000000802ffb8        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
+                0x000000000802ffbc                PROVIDE (__init_array_end = .)
+                0x000000000802ffc0                . = ALIGN (0x8)
+ *fill*         0x000000000802ffbc        0x4 
 
-.fini_array     0x000000000802ffc8        0x8
-                0x000000000802ffc8                . = ALIGN (0x8)
+.fini_array     0x000000000802ffc0        0x8
+                0x000000000802ffc0                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000802ffc8        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
+ .fini_array    0x000000000802ffc0        0x4 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000802ffd0                . = ALIGN (0x8)
- *fill*         0x000000000802ffcc        0x4 
-                0x000000000802ffd0                _sidata = LOADADDR (.data)
+                0x000000000802ffc8                . = ALIGN (0x8)
+ *fill*         0x000000000802ffc4        0x4 
+                0x000000000802ffc8                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000     0x1908 load address 0x000000000802ffd0
+.data           0x0000000020000000     0x1908 load address 0x000000000802ffc8
                 0x0000000020000000                . = ALIGN (0x8)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -22059,11 +22059,11 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000020001908                . = ALIGN (0x8)
                 0x0000000020001908                _edata = .
 
-.igot.plt       0x0000000020001908        0x0 load address 0x00000000080318d8
+.igot.plt       0x0000000020001908        0x0 load address 0x00000000080318d0
  .igot.plt      0x0000000020001908        0x0 C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m+fp/softfp/crtbegin.o
                 0x0000000020001908                . = ALIGN (0x4)
 
-.bss            0x0000000020001908     0xe314 load address 0x00000000080318d8
+.bss            0x0000000020001908     0xe314 load address 0x00000000080318d0
                 0x0000000020001908                _sbss = .
                 0x0000000020001908                __bss_start__ = _sbss
  *(.bss)
@@ -22654,7 +22654,7 @@ LOAD C:/ST/STM32CubeIDE_1.13.2/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x000000002000fc1c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000fc1c     0x5004 load address 0x00000000080318d8
+                0x000000002000fc1c     0x5004 load address 0x00000000080318d0
                 0x000000002000fc20                . = ALIGN (0x8)
  *fill*         0x000000002000fc1c        0x4 
                 0x000000002000fc20                PROVIDE (end = .)
